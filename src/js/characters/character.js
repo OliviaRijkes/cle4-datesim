@@ -4,7 +4,7 @@ import { Resources } from "../resources";
 export class Character extends Actor {
     constructor() {
         super()
-        this.name = Kato
+        this.name = 'Kato'
         this.graphics.use(Resources.Character1.toSprite())
         this.branch = 'begin'
         this.dialog = {
