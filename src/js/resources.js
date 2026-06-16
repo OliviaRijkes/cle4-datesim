@@ -1,10 +1,9 @@
-import { ImageSource, Sound, Resource, Loader } from 'excalibur'
+import {ImageSource, Sound, Resource, Loader, FontSource} from 'excalibur'
 
 // voeg hier jouw eigen resources toe
 const Resources = {
-    Fish: new ImageSource('images/fish.png'),
-    Shark: new ImageSource('images/shark.png'),
-    Character1: new ImageSource('images/character1.png')
+    Character1: new ImageSource('images/character1.jpg'),
+    Font: new FontSource('images/Merriweather-VariableFont_opsz,wdth,wght.ttf', 'StandertFont'),
 }
 
 
