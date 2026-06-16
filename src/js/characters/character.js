@@ -9,8 +9,8 @@ export class Character extends Actor {
         this.branch = 'begin'
         this.dialog = {
             begin: [
-                `Hello, thx for meeting me owo`
-                    `My name is ${this.name}`
+                `Hello, thx for meeting me owo`,
+                    `My name is ${this.name}`,
                     `SO.. who are you?`
             ],
             normal: [
