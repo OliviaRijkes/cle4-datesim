@@ -1,17 +1,20 @@
-import { Actor } from "excalibur";
+import { Actor, Vector } from "excalibur";
 import { Resources } from "../resources";
 
 export class Character extends Actor {
+
     constructor() {
         super()
         this.name = 'Kato'
         this.graphics.use(Resources.Character1.toSprite())
         this.branch = 'begin'
+
+        //the dialog contains the branches with the dialog inside
         this.dialog = {
             begin: [
                 `Hello, thx for meeting me owo`,
-                    `My name is ${this.name}`,
-                    `SO.. who are you?`
+                `My name is ${this.name}`,
+                `SO.. who are you?`
             ],
             normal: [
                 "ok"
@@ -26,6 +29,10 @@ export class Character extends Actor {
                 "haha.. uhm."
             ]
         }
+        //the choices the player makes at the end of each branch
+        //each choice changes the current branch
+        //in the choice on the ui it displays the first dialog in the text
+        //when choosen it is displayed on the maintext and you go through it like normal dialog and it ends into the new branch
         this.choices = {
             begin: [
                 {
@@ -56,10 +63,11 @@ export class Character extends Actor {
                     }
                 }
             ]
+        }
     }
-}
-onInitialize(engine) {
 
-
-}
+    onInitialize(engine) {
+        this.graphics.use(Resources.Character1.toSprite());
+        this.pos = new Vector(100, 200);
+    }
 }
