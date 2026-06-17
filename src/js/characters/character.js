@@ -40,27 +40,30 @@ export class Character extends Actor {
                         "My name is Max",
                         "I study"
                     ],
-                    branch() {
+                    branching() {
                         this.branch = 'normal'
-                    }
+                    },
+                    branch: 'normal'
                 },
                 {
                     text: [
                         "Hewwo My name is Max :3",
                         "I like the puppy ears you wear"
                     ],
-                    branch() {
+                    branching() {
                         this.branch = 'furry'
-                    }
+                    },
+                    branch: 'furry'
                 },
                 {
                     text: [
                         "It is Max m'lady",
                         "The only thing sharper than my katana is my wit m'lady"
                     ],
-                    branch() {
+                    branching() {
                         this.branch = 'wtf'
-                    }
+                    },
+                    branch: 'wtf'
                 }
             ]
         }

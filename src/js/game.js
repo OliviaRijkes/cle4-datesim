@@ -6,12 +6,12 @@ import { Datescene } from './scenes/datescene.js'
 export class Game extends Engine {
 
     constructor() {
-        super({ 
+        super({
             width: 1280,
             height: 720,
             maxFps: 60,
             displayMode: DisplayMode.FitScreen
-         })
+        })
         this.start(ResourceLoader).then(() => this.startGame())
     }
 
@@ -20,9 +20,7 @@ export class Game extends Engine {
         //load scenes to switch
         this.addScene("date", new Datescene)
         this.goToScene("date")
-
     }
-
 }
 
 new Game()

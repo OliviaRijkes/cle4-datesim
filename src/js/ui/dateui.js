@@ -6,6 +6,7 @@ export class Dateui extends ScreenElement {
         this.dialogIndex = 0
         this.branch = this.scene.dateCharacter.branch
         this.currentDialog = this.branch
+        this.choosing = false
         //maintext
 
         this.mainTextLabel = new Label({
@@ -58,12 +59,22 @@ export class Dateui extends ScreenElement {
         const choiseDialog = this.scene.dateCharacter.choices[this.branch][i]
         this.loadText(choiseDialog.text[0])
 
+        //set branch
+        this.scene.dateCharacter.choices[this.branch][i].branching()
+        this.branch = this.scene.dateCharacter.choices[this.branch][i].branch
+
         //remove choiceLabels
+
 
     }
     //loads the next text in the dialog of the branch
     dialogForwardClick(dialog){
-        if(dialog.length <this.dialogIndex)
-        this.loadText(dialog[this.dialogIndex+1])
+        if(dialog.length <this.dialogIndex){
+            this.loadText(dialog[this.dialogIndex+1])
+        } else{
+            //if choosing => use branch to load the new dialog and reset dialogIndex=0
+            //if not choosing => spawn choices of the branch unless the branch is 'end'
+        }
+
     }
 }

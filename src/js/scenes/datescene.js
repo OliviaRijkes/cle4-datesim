@@ -10,7 +10,5 @@ export class Datescene extends Scene{
 
         this.dateCharacter = new Character();
         this.add(this.dateCharacter);
-
     }
-
 }
