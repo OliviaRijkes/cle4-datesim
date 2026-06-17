@@ -1,5 +1,5 @@
-import { Actor, Vector } from "excalibur";
-import { Resources } from "../resources";
+import {Actor, Vector} from "excalibur";
+import {Resources} from "../resources";
 
 export class Character extends Actor {
 
@@ -12,11 +12,13 @@ export class Character extends Actor {
         //the dialog contains the branches with the dialog inside
         this.dialog = {
             begin: [
-                `Hello, thx for meeting me owo`,
-                `My name is ${this.name}`,
-                `SO.. who are you?`
+                `${this.name}: Hello, thx for meeting me owo`,
+                `player: My name is ${this.name}`,
+                `player: SO.. who are you?`
             ],
             normal: [
+                "My name is Player",
+                "I study",
                 "ok"
             ],
             furry: [
@@ -37,22 +39,16 @@ export class Character extends Actor {
             begin: [
                 {
                     text: [
-                        "My name is Max",
-                        "I study"
+                        "Player: My name is Max",
+                        `player: SO.. who are you?`
                     ],
-                    branching() {
-                        this.branch = 'normal'
-                    },
                     branch: 'normal'
                 },
                 {
                     text: [
-                        "Hewwo My name is Max :3",
+                        "Hewwo My name is Player :3",
                         "I like the puppy ears you wear"
                     ],
-                    branching() {
-                        this.branch = 'furry'
-                    },
                     branch: 'furry'
                 },
                 {
@@ -60,9 +56,6 @@ export class Character extends Actor {
                         "It is Max m'lady",
                         "The only thing sharper than my katana is my wit m'lady"
                     ],
-                    branching() {
-                        this.branch = 'wtf'
-                    },
                     branch: 'wtf'
                 }
             ]
