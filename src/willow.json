@@ -1,0 +1,56 @@
+[
+  {
+    "id": "begin",
+    "name": "willow",
+    "dialog": "Hi! I'm Willow, nice to meet you.",
+    "emotion": "Happy",
+    "image": "willow-happy.png",
+    "responses": [
+      {
+        "response": "Hello, I'm {Player},nice to meet you too.",
+        "link": "normal"
+      },
+      {
+        "response": "That's a cute name. I'm {Player}, nice to meet you too.",
+        "link": "compliment"
+      },
+      {
+        "response": "HAIII! I’m {Player}!`,Nice to meet you too!!",
+        "link": "energetic"
+      }
+    ]
+  },
+  {
+    "id": "compliment",
+    "name": "willow",
+    "dialog": "Oh, thank you. I like yours too",
+    "emotion": "Flustered",
+    "image": "willow-flustered.png",
+    "responses": [
+      {
+        "link": "pronouns"
+      }
+    ]
+  },
+  {
+    "id": "pronouns",
+    "name": "willow",
+    "dialog": "Hi! I'm {name}, nice to meet you.",
+    "emotion": "Happy",
+    "image": "willow-happy.png",
+    "responses": [
+      {
+        "response": "Hello, I'm {Player},nice to meet you too.",
+        "link": "normal"
+      },
+      {
+        "response": "That's a cute name. I'm {Player}, nice to meet you too.",
+        "link": "compliment"
+      },
+      {
+        "response": "HAIII! I’m {Player}!`,Nice to meet you too!!",
+        "link": "energetic"
+      }
+    ]
+  }
+]

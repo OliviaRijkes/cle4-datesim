@@ -1,0 +1,40 @@
+[
+  {
+    "id": "begin",
+    "name": "willow",
+    "question": "Hi i am willow, how are you today?",
+    "emotion": "lovely",
+    "image": "willow-friendly.png",
+    "answers": [
+      {
+        "answer": "Hi! you look nice!",
+        "friendliness": 8,
+        "link": "compliment"
+      },
+      {
+        "answer": "Hi! you look awful today!",
+        "friendliness": 1,
+        "link": "angry"
+      }
+    ]
+  },
+  {
+    "id": "compliment",
+    "name": "willow",
+    "question": "Oh thank you that is so nice to hear?",
+    "emotion": "lovely",
+    "image": "willow-blushing.png",
+    "answers": [
+      {
+        "answer": "No problem! !",
+        "friendliness": 5,
+        "link": "neutral"
+      },
+      {
+        "answer": "Do you always look so nice?!",
+        "friendliness": 11,
+        "link": "in-love"
+      }
+    ]
+  }
+]
