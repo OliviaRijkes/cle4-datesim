@@ -1,14 +1,11 @@
-import { Color, Font, FontUnit, Label, Rectangle, ScreenElement, Vector } from "excalibur";
+import { Color, Font, FontUnit, Keys, Label, Rectangle, ScreenElement, Vector } from "excalibur";
 import { Resources } from "../resources.js";
 
 export class Dateui extends ScreenElement {
     onInitialize(engine) {
-        this.dialogIndex = 0
-        this.branch = this.scene.dateCharacter.branch
-        this.currentDialog = this.branch
-        this.choosing = false
-        //maintext
+        
 
+        //maintext
         this.mainTextLabel = new Label({
             text: 'test',
             pos: new Vector(100, 550),
@@ -18,22 +15,21 @@ export class Dateui extends ScreenElement {
                 color: Color.Black
             })
         })
-        const beginDialog = this.scene.dateCharacter.dialog.begin[0];
-        this.loadText(beginDialog);
         this.addChild(this.mainTextLabel);
 
-        //choices
+        //init write: uses branch,dialogIndex
+        this.loadText();
         this.loadChoices()
 
         //lovemeter
     }
-    loadText(text) {
-        this.mainTextLabel.text = text;
+    loadText() {
+        this.mainTextLabel.text = this.scene.branch[this.scene.dialogIndex]
     }
-    //loads the choices in for the amount of choices
     loadChoices() {
         //needs the branch it ended at to load the choices
-        const choices = this.scene.dateCharacter.choices[this.branch]
+        console.log(this.scene.dateCharacter.choices,this.scene.branchName)
+        const choices = this.scene.dateCharacter.choices[this.scene.branchName]
 
         //loops through all choices and makes a label with the 1st text
         for (let i = 0; i < choices.length; i++) {
@@ -53,28 +49,18 @@ export class Dateui extends ScreenElement {
     }
     choiceClick(i) {
         //resets the dialogIndex
-        this.dialogIndex =0
+        this.scene.dialogIndex = 0
 
-        //load dialog of the choice to load
-        const choiseDialog = this.scene.dateCharacter.choices[this.branch][i]
-        this.loadText(choiseDialog.text[0])
+        //change the branch
+        //index of the dialog based of the name
+        const dialogArray = Object.keys(this.scene.dateCharacter.dialog)
+        const branchName = this.scene.dateCharacter.choices[this.scene.branchName][i].branch
+        this.scene.changeBranch(dialogArray.indexOf(branchName))
 
-        //set branch
-        this.scene.dateCharacter.choices[this.branch][i].branching()
-        this.branch = this.scene.dateCharacter.choices[this.branch][i].branch
+        //set branch & load
+        this.loadText()
 
         //remove choiceLabels
-
-
-    }
-    //loads the next text in the dialog of the branch
-    dialogForwardClick(dialog){
-        if(dialog.length <this.dialogIndex){
-            this.loadText(dialog[this.dialogIndex+1])
-        } else{
-            //if choosing => use branch to load the new dialog and reset dialogIndex=0
-            //if not choosing => spawn choices of the branch unless the branch is 'end'
-        }
 
     }
 }
