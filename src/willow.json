@@ -21,7 +21,19 @@
     ]
   },
   {
-    "id": "compliment",
+    "id": "normal",
+    "name": "willow",
+    "dialog": "...",
+    "emotion": "Happy",
+    "image": "willow-happy.png",
+    "responses": [
+      {
+        "link": "pronouns"
+      }
+    ]
+  },
+  {
+    "id": "energetic",
     "name": "willow",
     "dialog": "Oh, thank you. I like yours too",
     "emotion": "Flustered",
@@ -33,23 +45,123 @@
     ]
   },
   {
+    "id": "compliment",
+    "name": "willow",
+    "dialog": "...",
+    "emotion": "Confused",
+    "image": "willow-confused.png",
+    "responses": [
+      {
+        "link": "pronouns"
+      }
+    ]
+  },
+  {
     "id": "pronouns",
     "name": "willow",
-    "dialog": "Hi! I'm {name}, nice to meet you.",
+    "dialog": "I'm non-binary by the way, my pronouns are they/them.",
     "emotion": "Happy",
     "image": "willow-happy.png",
     "responses": [
       {
-        "response": "Hello, I'm {Player},nice to meet you too.",
-        "link": "normal"
+        "response": "Okay, I’ll keep that in mind, I go by {Pronouns}.",
+        "link": "understanding"
       },
       {
-        "response": "That's a cute name. I'm {Player}, nice to meet you too.",
-        "link": "compliment"
+        "response": "Sorry, what is that?",
+        "link": "meaning"
       },
       {
-        "response": "HAIII! I’m {Player}!`,Nice to meet you too!!",
-        "link": "energetic"
+        "response": "Oh, so you're one of those people...",
+        "link": "cruel"
+      }
+    ]
+  },
+  {
+    "id": "understanding",
+    "name": "willow",
+    "dialog": "Thanks, I will too",
+    "emotion": "Happy",
+    "image": "willow-happy.png",
+    "responses": [
+      {
+        "link": "next"
+      }
+    ]
+  },
+  {
+    "id": "meaning",
+    "name": "willow",
+    "dialog": "It means I’m neither male nor female.",
+    "emotion": "Happy",
+    "image": "willow-happy.png",
+    "responses": [
+      {
+        "response": "okay, I think i get it now, I'll keep that in mind",
+        "link": "next"
+      },
+      {
+        "response": "I still don't get it completely",
+        "link": "meaning2"
+      },
+      {
+        "response": "Oh, so you're one of those people...",
+        "link": "cruel"
+      }
+    ]
+  },
+  {
+    "id": "cruel",
+    "name": "willow",
+    "dialog": "What is that supposed to mean?",
+    "emotion": "Angry",
+    "image": "willow-angry.png",
+    "responses": [
+      {
+        "response": "I didn't mean it in a bad way. You're just unique",
+        "link": "fix"
+      },
+      {
+        "response": "One of those people that can't just be *normal*",
+        "link": "ruined"
+      }
+    ]
+  },
+  {
+    "id": "meaning2",
+    "name": "willow",
+    "dialog": "Oh, don't worry, I'll try to explain it better. (I need to write an explanation)",
+    "emotion": "Happy",
+    "image": "willow-happy.png",
+    "responses": [
+      {
+        "response": "okay, I think i get it now, I'll keep that in mind",
+        "link": "next"
+      }
+    ]
+  },
+  {
+    "id": "fix",
+    "name": "willow",
+    "dialog": "Please don't call it that, but I'll let it slide for now..",
+    "emotion": "Happy",
+    "image": "willow-happy.png",
+    "responses": [
+      {
+        "response": "okay, I think i get it now, I'll keep that in mind",
+        "link": "next"
+      }
+    ]
+  },
+  {
+    "id": "ruined",
+    "name": "willow",
+    "dialog": "There's nothing wrong with being non-binary. You're the weird one for treating me like that. I'll take my leave now, you're clearly not what I'm looking for.",
+    "emotion": "Angry",
+    "image": "willow-angry.png",
+    "responses": [
+      {
+        "link": "dateEnds"
       }
     ]
   }
