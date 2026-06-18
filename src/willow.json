@@ -148,7 +148,6 @@
     "image": "willow-happy.png",
     "responses": [
       {
-        "response": "okay, I think i get it now, I'll keep that in mind",
         "link": "next"
       }
     ]
