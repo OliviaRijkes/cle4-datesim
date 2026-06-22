@@ -18,7 +18,7 @@ export class Dateui extends ScreenElement {
 
         //init write: uses branch,dialogIndex
         this.loadText();
-        this.loadChoices()
+        // this.loadChoices()
 
         //lovemeter
     }
@@ -33,7 +33,7 @@ export class Dateui extends ScreenElement {
         //loops through all choices and makes a label with the 1st text
         for (let i = 0; i < choices.length; i++) {
            // const choiceLabel = new ChoiceLabel(i, choices[i].text[0])
-            
+
             const choiceLabel = new Label({
                 text: choices[i].text[0],
                 pos: new Vector(900, 500 + 50 * i),
@@ -44,7 +44,7 @@ export class Dateui extends ScreenElement {
                 })
             })
             // per choice it adds a click even that needs the choice index
-            
+
             choiceLabel.on("pointerdown", () => this.choiceClick(i))
             this.addChild(choiceLabel)
         }

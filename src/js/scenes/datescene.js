@@ -11,7 +11,7 @@ export class Datescene extends Scene {
         this.choices = new Choiceui();
         this.add(this.dateCharacter);
         this.add(this.ui);
-        // this.add(this.choices)
+        this.add(this.choices)
 
         this.branchName = 'begin'
         this.branch = this.dateCharacter.dialog.begin
@@ -56,22 +56,22 @@ export class Datescene extends Scene {
             }
         }
     }
-    changeScene(sceneNumber) {
-
-    }
+    // changeScene(sceneNumber) {
+    //
+    // }
     changeBranch(branchNumber) {
         let name = Object.keys(this.dateCharacter.dialog)[branchNumber]
         this.branchName = name
         this.branch = this.dateCharacter.dialog[name]
     }
-    changeEmotion(emotionNumber) {
-
-    }
-    changeLove(number) {
-
-    }
-    changeFriendship(number) {
-
-    }
+    // changeEmotion(emotionNumber) {
+    //
+    // }
+    // changeLove(number) {
+    //
+    // }
+    // changeFriendship(number) {
+    //
+    // }
 
 }
