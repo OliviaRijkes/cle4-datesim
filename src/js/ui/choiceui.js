@@ -1,4 +1,5 @@
-import { ScreenElement } from "excalibur";
+import {Color, FontUnit, Label, ScreenElement, Vector} from "excalibur";
+import {Resources} from "../resources.js";
 
 export class Choiceui extends ScreenElement{
     onInitialize(engine){
@@ -6,12 +7,10 @@ export class Choiceui extends ScreenElement{
         console.log(this.scene.dateCharacter.choices,this.scene.branchName)
         const choices = this.scene.dateCharacter.choices[this.scene.branchName]
 
-        //loops through all choices and makes a label with the 1st text
+        // loops through all choices and makes a label with the 1st text
         for (let i = 0; i < choices.length; i++) {
-           // const choiceLabel = new ChoiceLabel(i, choices[i].text[0])
-            
-           //Label later misschien veranderen naar ChoiceLabel of Choices ofzo -D
-            const choiceLabel = new ChoiceLabel({
+
+            const choiceLabel = new Label({
                 text: choices[i].text[0],
                 pos: new Vector(900, 500 + 50 * i),
                 font: Resources.Font.toFont({
@@ -21,7 +20,7 @@ export class Choiceui extends ScreenElement{
                 })
             })
             // per choice it adds a click even that needs the choice index
-            
+
             choiceLabel.on("pointerdown", () => this.choiceClick(i))
             this.addChild(choiceLabel)
         }
@@ -37,8 +36,8 @@ export class Choiceui extends ScreenElement{
         this.scene.changeBranch(dialogArray.indexOf(branchName))
 
         //set branch & load
-        this.loadText()
-        this.scene.translateTextFunction(this.mainTextLabel.text)
+        this.scene.ui.loadText()
+        this.scene.translateTextFunction(this.scene.ui.mainTextLabel.text)
 
         //remove choiceLabels
         this.kill()

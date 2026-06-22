@@ -1,12 +1,11 @@
 import {Actor, Vector} from "excalibur";
-import {Resources} from "../resources";
+import { Resources } from "../resources";
 
 export class Character extends Actor {
-
     constructor() {
         super()
         this.name = 'Kato'
-        this.graphics.use(Resources.Character1.toSprite())
+        // this.graphics.use(Resources.Character1.toSprite())
         this.branch = 'begin'
 
         //the dialog contains the branches with the dialog inside
