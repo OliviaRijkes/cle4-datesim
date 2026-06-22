@@ -18,7 +18,7 @@ export class Game extends Engine {
     startGame() {
         console.log("start de game!")
         //load scenes to switch
-        this.addScene("date", new Datescene)
+        this.addScene("date", new Datescene())
         this.goToScene("date")
     }
 }

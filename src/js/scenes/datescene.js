@@ -1,14 +1,17 @@
 import { Keys, Scene } from "excalibur";
 import { Dateui } from "../ui/dateui.js";
 import { Character } from "../characters/character.js";
+import { Choiceui } from "../ui/choiceui.js";
 
 export class Datescene extends Scene {
     onInitialize(engine) {
         console.log('dateScene start')
         this.dateCharacter = new Character();
         this.ui = new Dateui();
+        this.choices = new Choiceui();
         this.add(this.dateCharacter);
         this.add(this.ui);
+        // this.add(this.choices)
 
         this.branchName = 'begin'
         this.branch = this.dateCharacter.dialog.begin
@@ -30,8 +33,8 @@ export class Datescene extends Scene {
     translateTextFunction(text) {
         //2 functions, bc 2x 2bits
         for (let i = 0; i < 2; i++) {
-            const functionBit = functionBit[0+i]
-            const valueBit = functionBit[1+i]
+            const functionBit = text[0+i]
+            const valueBit = text[1+i]
             switch (functionBit) {
                 case 's':
                     this.changeScene(valueBit)

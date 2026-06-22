@@ -1,0 +1,57 @@
+import { FontUnit, Label, Color, Font, Vector } from "excalibur";
+import { Choiceui } from "./choiceui";
+
+//Nieuw aangemaakt voor een test
+//Label met choices toevoegen per character? 
+//-D
+
+export class Choices extends Label {
+    lives = 3;
+    choiceui;
+
+    set(Choiceui) {
+        this.choiceui = choiceui;
+    }
+
+
+    onInitialize(engine) {
+        super.onInitialize(engine);
+        {
+            this.text = "Lives: 3";
+            this.font = new Font({
+                family: 'Arial',
+                size: 24,
+                unit: FontUnit.Px,
+                color: Color.Black
+            })
+
+            this.pos = new Vector(100, 100);
+        }
+    }
+
+    onInitialize(engine) {
+        //needs the branch it ended at to load the choices
+        console.log(this.scene.dateCharacter.choices, this.scene.branchName)
+        const choices = this.scene.dateCharacter.choices[this.scene.branchName]
+
+        //loops through all choices and makes a label with the 1st text
+        for (let i = 0; i < choices.length; i++) {
+            // const choiceLabel = new ChoiceLabel(i, choices[i].text[0])
+
+            //Label verandert naar ChoiceLabel
+            const choiceLabel = new ChoiceLabel({
+                text: choices[i].text[0],
+                pos: new Vector(900, 500 + 50 * i),
+                font: Resources.Font.toFont({
+                    unit: FontUnit.Px,
+                    size: 24,
+                    color: Color.Black
+                })
+            })
+            // per choice it adds a click even that needs the choice index
+
+            choiceLabel.on("pointerdown", () => this.choiceClick(i))
+            this.addChild(choiceLabel)
+        }
+    }
+}

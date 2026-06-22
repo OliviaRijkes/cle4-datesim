@@ -12,13 +12,11 @@ export class Character extends Actor {
         //the dialog contains the branches with the dialog inside
         this.dialog = {
             begin: [
-                `${this.name}: Hello, thx for meeting me owo`,
-                `player: My name is ${this.name}`,
-                `player: SO.. who are you?`
+                `Hello, thx for meeting me owo`,
+                `My name is ${this.name}`,
+                `SO.. who are you?`
             ],
             normal: [
-                "My name is Player",
-                "I study",
                 "ok"
             ],
             furry: [
@@ -39,14 +37,14 @@ export class Character extends Actor {
             begin: [
                 {
                     text: [
-                        "Player: My name is Max",
-                        `player: SO.. who are you?`
+                        "My name is Max",
+                        `I study`
                     ],
                     branch: 'normal'
                 },
                 {
                     text: [
-                        "Hewwo My name is Player :3",
+                        "Hewwo My name is Max :3",
                         "I like the puppy ears you wear"
                     ],
                     branch: 'furry'
