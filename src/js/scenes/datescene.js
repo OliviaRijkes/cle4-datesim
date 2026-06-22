@@ -24,12 +24,14 @@ export class Datescene extends Scene {
             console.log(this.branch.length, this.dialogIndex)
         }
     }
+
     onPreUpdate(engine) {
         const kb = engine.input.keyboard
         if (kb.wasPressed(Keys.Space)) {
             this.nextClick()
         }
     }
+
     translateTextFunction(text) {
         //2 functions, bc 2x 2bits
         for (let i = 0; i < 2; i++) {
@@ -56,22 +58,22 @@ export class Datescene extends Scene {
             }
         }
     }
-    // changeScene(sceneNumber) {
-    //
-    // }
+    changeScene(sceneNumber) {
+
+    }
     changeBranch(branchNumber) {
         let name = Object.keys(this.dateCharacter.dialog)[branchNumber]
         this.branchName = name
         this.branch = this.dateCharacter.dialog[name]
     }
-    // changeEmotion(emotionNumber) {
-    //
-    // }
-    // changeLove(number) {
-    //
-    // }
-    // changeFriendship(number) {
-    //
-    // }
+    changeEmotion(emotionNumber) {
+
+    }
+    changeLove(number) {
+
+    }
+    changeFriendship(number) {
+
+    }
 
 }

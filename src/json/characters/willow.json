@@ -15,7 +15,7 @@
         "link": "compliment"
       },
       {
-        "response": "HAIII! I’m {Player}!`,Nice to meet you too!!",
+        "response": "HAIII! I’m {Player}!,Nice to meet you too!!",
         "link": "energetic"
       }
     ]
