@@ -61,6 +61,6 @@ export class Character extends Actor {
 
     onInitialize(engine) {
         this.graphics.use(Resources.Character1.toSprite());
-        this.pos = new Vector(100, 200);
+        this.pos = new Vector(640, 200);
     }
 }

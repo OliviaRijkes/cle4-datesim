@@ -39,6 +39,11 @@ export class Choiceui extends ScreenElement{
         this.scene.ui.loadText()
         this.scene.translateTextFunction(this.scene.ui.mainTextLabel.text)
 
+        //Change friendship and love based on value set in the choice
+        //Moet later verandert worden op basis van de json ui
+        this.scene.ui.changeFriendship(this.scene.branchName.friendship);
+        this.scene.ui.changeLove(this.scene.branchName.love);
+
         //remove choiceLabels
         this.kill()
 
