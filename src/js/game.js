@@ -1,9 +1,8 @@
 import '../css/style.css'
 import {Actor, Engine, Vector, DisplayMode} from "excalibur"
 import {Resources, ResourceLoader} from './resources.js'
-import {Datescene} from './scenes/datescene.js'
-
-// import {WillowDatescene} from "./scenes/willowDatescene.js";
+// import {Datescene} from './scenes/datescene.js'
+import {WillowDatescene} from "./scenes/willowDatescene.js";
 
 export class Game extends Engine {
 
@@ -17,19 +16,19 @@ export class Game extends Engine {
         this.start(ResourceLoader).then(() => this.startGame())
     }
 
-    startGame() {
-        console.log("start de game!")
-        //load scenes to switch
-        this.addScene("date", new Datescene())
-        this.goToScene("date")
-    }
-
     // startGame() {
     //     console.log("start de game!")
     //     //load scenes to switch
-    //     this.addScene("date", new WillowDatescene())
+    //     this.addScene("date", new Datescene())
     //     this.goToScene("date")
     // }
+
+    startGame() {
+        console.log("start de game!")
+        //load scenes to switch
+        this.addScene("date", new WillowDatescene())
+        this.goToScene("date")
+    }
 }
 
 new Game()

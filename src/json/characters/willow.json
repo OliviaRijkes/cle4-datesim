@@ -4,7 +4,7 @@
     "name": "willow",
     "dialog": "Hi! I'm Willow, nice to meet you.",
     "emotion": "Happy",
-    "image": "willow-happy.png",
+    "image": "WillowHappy",
     "responses": [
       {
         "response": "Hello, I'm {Player},nice to meet you too.",
@@ -25,7 +25,7 @@
     "name": "willow",
     "dialog": "...",
     "emotion": "Happy",
-    "image": "willow-happy.png",
+    "image": "WillowHappy",
     "responses": [
       {
         "link": "pronouns"
@@ -37,7 +37,7 @@
     "name": "willow",
     "dialog": "Oh, thank you. I like yours too",
     "emotion": "Flustered",
-    "image": "willow-flustered.png",
+    "image": "WillowFlustered",
     "responses": [
       {
         "link": "pronouns"
@@ -49,7 +49,7 @@
     "name": "willow",
     "dialog": "...",
     "emotion": "Confused",
-    "image": "willow-confused.png",
+    "image": "WillowConfused",
     "responses": [
       {
         "link": "pronouns"
@@ -61,7 +61,7 @@
     "name": "willow",
     "dialog": "I'm non-binary by the way, my pronouns are they/them.",
     "emotion": "Happy",
-    "image": "willow-happy.png",
+    "image": "WillowHappy",
     "responses": [
       {
         "response": "Okay, I’ll keep that in mind, I go by {Pronouns}.",
@@ -82,7 +82,7 @@
     "name": "willow",
     "dialog": "Thanks, I will too",
     "emotion": "Happy",
-    "image": "willow-happy.png",
+    "image": "WillowHappy",
     "responses": [
       {
         "link": "next"
@@ -94,7 +94,7 @@
     "name": "willow",
     "dialog": "It means I’m neither male nor female.",
     "emotion": "Happy",
-    "image": "willow-happy.png",
+    "image": "WillowHappy",
     "responses": [
       {
         "response": "okay, I think i get it now, I'll keep that in mind",
@@ -115,7 +115,7 @@
     "name": "willow",
     "dialog": "What is that supposed to mean?",
     "emotion": "Angry",
-    "image": "willow-angry.png",
+    "image": "WillowAngry",
     "responses": [
       {
         "response": "I didn't mean it in a bad way. You're just unique",
@@ -132,7 +132,7 @@
     "name": "willow",
     "dialog": "Oh, don't worry, I'll try to explain it better. (I need to write an explanation)",
     "emotion": "Happy",
-    "image": "willow-happy.png",
+    "image": "WillowHappy",
     "responses": [
       {
         "response": "okay, I think i get it now, I'll keep that in mind",
@@ -145,7 +145,7 @@
     "name": "willow",
     "dialog": "Please don't call it that, but I'll let it slide for now..",
     "emotion": "Happy",
-    "image": "willow-happy.png",
+    "image": "WillowHappy",
     "responses": [
       {
         "link": "next"
@@ -157,7 +157,7 @@
     "name": "willow",
     "dialog": "There's nothing wrong with being non-binary. You're the weird one for treating me like that. I'll take my leave now, you're clearly not what I'm looking for.",
     "emotion": "Angry",
-    "image": "willow-angry.png",
+    "image": "WillowAngry",
     "responses": [
       {
         "link": "dateEnds"

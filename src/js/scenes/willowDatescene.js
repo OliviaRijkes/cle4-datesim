@@ -1,31 +1,54 @@
-import {Keys, Scene} from "excalibur";
-import {Dateui} from "../ui/dateui.js";
+import {Actor, Keys, Scene, Vector} from "excalibur";
+import {DateUI} from "../ui/willowDateui.js";
 import willowData from "../../json/characters/willow.json";
 import {Resources} from "../resources.js";
+import {ChoiceUI} from "../ui/willowChoiceUI.js";
 
-console.log("Loaded:", willowData);
+// console.log("Loaded:", willowData);
 
 export class WillowDatescene extends Scene {
 
     onInitialize(engine) {
+        console.log('dateScene start')
 
+        // Now you only have to change where the dialogData comes from for each character
         this.dialogData = willowData;
 
+        // Start in branch: begin
         this.currentBranchId = "begin";
         this.branch = this.findBranch(this.currentBranchId);
 
-        this.dialogHistory = [];
-        this.dialogHistory.push(
-            `${this.branch.name}: ${this.branch.dialog}`
+        // Character needs to be an actor so the image of the character can be shown on the screen
+        this.dateCharacter = new Actor({
+            pos: new Vector(640, 360)
+        });
+
+        this.add(this.dateCharacter);
+
+        // The character needs to start with an image (corresponding to emotion)
+        this.changeEmotion(this.branch.image);
+
+        // (for later)
+        // this.dialogHistory = [];
+
+        // Save the characters name and their dialog in the dialog history (for later)
+        // this.dialogHistory.push(
+        //     `${this.branch.name}: ${this.branch.dialog}`
+        // );
+
+        this.ui = new DateUI();
+        this.choices = new ChoiceUI();
+
+        this.add(this.ui);
+        this.add(this.choices)
+
+        // get starting choices
+        this.choices.showChoices(
+            this.branch.responses
         );
-
-        this.ui = new Dateui();
-
-        // this.add(this.ui);
-
-        this.ui.changeBranch(this.currentBranchId);
     }
 
+    // The id's in json are branches, get what is in that branch
     findBranch(id) {
         return this.dialogData.find(branch => branch.id === id);
     }
@@ -34,6 +57,7 @@ export class WillowDatescene extends Scene {
 
         const responses = this.branch.responses;
 
+        // If there is only a link and not a response to click -> go to the link (= following branch) automatically
         if (
             responses.length === 1 &&
             !responses[0].response
@@ -49,29 +73,29 @@ export class WillowDatescene extends Scene {
         }
     }
 
-    showResponses() {
-
-        const responses = this.branch.responses;
-
-        this.ui.showChoices(responses);
-
-    }
-
     changeBranch(branchId) {
 
         this.currentBranchId = branchId;
 
-        this.branch = this.getBranch(branchId);
+        this.branch = this.findBranch(branchId);
 
-        this.dialogHistory.push(
-            `${this.branch.name}: ${this.branch.dialog}`
-        );
+        // for later
+        // this.dialogHistory.push(
+        //     `${this.branch.name}: ${this.branch.dialog}`
+        // );
 
+        // When branch is changed, the emotion can too
         this.changeEmotion(this.branch.image);
 
         this.ui.loadText();
+
+        // get new choices when you come in new branch
+        this.choices.showChoices(
+            this.branch.responses
+        );
     }
 
+    // change the image based on the emotion of the character
     changeEmotion(imageName) {
         this.dateCharacter.graphics.use(
             Resources[imageName].toSprite()
@@ -81,10 +105,12 @@ export class WillowDatescene extends Scene {
 
     selectResponse(responseData) {
 
-        this.dialogHistory.push(
-            `Player: ${responseData.response}`
-        );
+        // Save player (name) and responses in dialog history (if we want to add that later)
+        // this.dialogHistory.push(
+        //     `Player: ${responseData.response}`
+        // );
 
+        // Change branch based on which link is in the json in responses
         this.changeBranch(responseData.link);
 
     }
