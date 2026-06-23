@@ -4,14 +4,12 @@ import willowData from "../../json/characters/willow.json";
 import {Resources} from "../resources.js";
 import {ChoiceUI} from "../ui/willowChoiceUI.js";
 
-// console.log("Loaded:", willowData);
-
 export class WillowDatescene extends Scene {
 
     onInitialize(engine) {
         console.log('dateScene start')
 
-        // Now you only have to change where the dialogData comes from for each character
+        // Now you only have to change where the dialogData comes from for each character, not replace dialogData everywhere
         this.dialogData = willowData;
 
         // Start in branch: begin
@@ -110,7 +108,7 @@ export class WillowDatescene extends Scene {
         //     `Player: ${responseData.response}`
         // );
 
-        // Change branch based on which link is in the json in responses
+        // Change branch based on which link is in the json (in responses)
         this.changeBranch(responseData.link);
 
     }

@@ -20,7 +20,7 @@ export class DateUI extends ScreenElement {
         this.loadText();
     }
 
-    // Put the character's data (text) from json in the labels and choices
+    // Put the character's data (text) from json in the text label
     loadText() {
         console.log("mainTextLabel =", this.mainTextLabel);
 
