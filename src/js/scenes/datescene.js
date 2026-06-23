@@ -1,4 +1,4 @@
-import { Keys, Scene } from "excalibur";
+import {Keys, Scene, Vector} from "excalibur";
 import { Dateui } from "../ui/dateui.js";
 import { Character } from "../characters/character.js";
 import { Choiceui } from "../ui/choiceui.js";
@@ -11,11 +11,13 @@ export class Datescene extends Scene {
         this.choices = new Choiceui();
         this.add(this.dateCharacter);
         this.add(this.ui);
-        this.add(this.choices)
+        this.add(this.choices);
 
         this.branchName = 'begin'
         this.branch = this.dateCharacter.dialog.begin
         this.dialogIndex = 0
+
+        this.ui.changeFriendship(30)
     }
     nextClick() {
         if (this.branch.length > this.dialogIndex + 1) {
@@ -69,11 +71,8 @@ export class Datescene extends Scene {
     changeEmotion(emotionNumber) {
 
     }
-    changeLove(number) {
 
-    }
-    changeFriendship(number) {
 
-    }
+
 
 }
