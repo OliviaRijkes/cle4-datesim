@@ -1,0 +1,182 @@
+[
+  {
+    "id": "begin",
+    "name": "Stella",
+    "dialog": "Hey, I'm Stella nice to meet you!",
+    "emotion": "Happy",
+    "image": "StellaHappy",
+    "responses": [
+      {
+        "response": "Hi, my name's {player}",
+        "link": "normal"
+      },
+      {
+        "response": "Wow! You look... interesting?",
+        "link": "negitive"
+      },
+      {
+        "response": "Hey, nice outfit! My name's {player}.",
+        "link": "compliment"
+      }
+    ]
+  },
+  {
+    "id": "normal",
+    "name": "Stella",
+    "dialog": "So tell me about yourself?",
+    "emotion": "Happy",
+    "image": "StellaHappy",
+    "friendship": 10,
+    "responses": [
+      {
+        "link": "hobbies"
+      }
+    ]
+  },
+  {
+    "id": "negative",
+    "name": "Stella",
+    "dialog": "I hope for you that wasn't judgmental.",
+    "emotion": "irritated",
+    "image": "StellaIrritated",
+    "friendship": -5,
+    "love": -5,
+    "responses": [
+      {
+        "response": "Nah you just look a little freaky, like those goth mommies.",
+        "link": "endDate"
+      },
+      {
+        "response": "Sorry, i just didn't expect the whole look.",
+        "link": "thinIce"
+      },
+      {
+        "response": "No no no! I was just impressed. You look really good. I was like wow, didn't expect that.",
+        "link": "apology"
+      }
+    ]
+  },
+  {
+    "id": "compliment",
+    "name": "Stella",
+    "dialog": "I like that name! So tell me about yourself?",
+    "emotion": "Happy",
+    "image": "StellaHappy",
+    "friendship": 20,
+    "love": 10,
+    "responses": [
+      {
+        "link": "hobbies"
+      }
+    ]
+  },
+  {
+    "id": "endDate",
+    "name": "Stella",
+    "dialog": "I'm not here to please your fetish! bye. (Date ends)",
+    "emotion": "Angry",
+    "image": "StellaAngry",
+    "friendship": -50,
+    "love": -50
+  },
+  {
+    "id": "thinIce",
+    "name": "Stella",
+    "dialog": "...",
+    "emotion": "irritated",
+    "image": "StellaIrritated",
+    "friendship": 5,
+    "responses": [
+      {
+        "link": "hobbies"
+      }
+    ]
+  },
+  {
+    "id": "apology",
+    "name": "Stella",
+    "dialog": "...",
+    "emotion": "Happy",
+    "image": "StellaHappy",
+    "love": 5,
+    "responses": [
+      {
+        "link": "hobbies"
+      }
+    ]
+  },
+  {
+    "id": "hobbies",
+    "name": "Stella",
+    "dialog": "...",
+    "emotion": "Happy",
+    "image": "StellaHappy",
+    "responses": [
+      {
+        "response": "I like going to the gym and playing games with friends",
+        "link": "games"
+      },
+      {
+        "response": "I like games and such",
+        "link": "games"
+      },
+      {
+        "response": "I'm usually listening to music. I like to go to concert, local and bigger ones",
+        "link": "music"
+      }
+    ]
+  },
+  {
+    "id": "games",
+    "name": "Stella",
+    "dialog": "We should play together sometimes! I'm not that good, but it's about having fun. I'm more of a music person myself.",
+    "emotion": "Happy",
+    "image": "StellaHappy",
+    "friendship": 15,
+    "love": 10,
+    "responses": [
+      {
+        "response": "What music do you listen to?",
+        "link": "stellamusic"
+      },
+      {
+        "response": "I'm not so sure, i don't like playing with noobs. I like to keep my score up.",
+        "link": "noobs"
+      },
+      {
+        "response": "I'd love to play games with you!",
+        "link": "playgames"
+      }
+    ]
+  },
+  {
+    "id": "music",
+    "name": "Stella",
+    "dialog": "Oh shit! I love music. What do you listen to",
+    "emotion": "Exited",
+    "image": "StellaExited",
+    "friendship": 10,
+    "love": 15,
+    "responses": [
+      {
+        "link": "genres"
+      }
+    ]
+  },
+  {
+    "id": "music",
+    "name": "Stella",
+    "dialog": "...",
+    "emotion": "Exited",
+    "image": "StellaExited",
+    "responses": [
+      {
+        "link": "genres"
+      }
+    ]
+  }
+
+
+
+
+]
