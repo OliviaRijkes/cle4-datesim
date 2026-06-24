@@ -15,6 +15,11 @@ const Resources = {
     OnyxHappy: new ImageSource('images/onyx.png'),
     OnyxAwkward: new ImageSource('images/onyx.png'),
     OnyxAnnoyed: new ImageSource('images/onyx.png'),
+    StellaHappy: new ImageSource('images/Stella.png'),
+    StellaExcited: new ImageSource('images/Stella.png'),
+    StellaIrritated: new ImageSource('images/Stella.png'),
+    StellaAngry: new ImageSource('images/Stella.png'),
+    StellaFlirty: new ImageSource('images/Stella.png'),
     Font: new FontSource('images/Merriweather-VariableFont_opsz,wdth,wght.ttf', 'StandertFont'),
 }
 
