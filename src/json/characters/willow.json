@@ -88,6 +88,8 @@
     "dialog": "Thanks, I will too",
     "emotion": "Happy",
     "image": "WillowHappy",
+    "love": 15,
+    "friendship": 15,
     "responses": [
       {
         "link": "next"
@@ -100,6 +102,7 @@
     "dialog": "It means I’m neither male nor female.",
     "emotion": "Happy",
     "image": "WillowHappy",
+    "friendship": 10,
     "responses": [
       {
         "response": "okay, I think i get it now, I'll keep that in mind",
@@ -121,6 +124,8 @@
     "dialog": "What is that supposed to mean?",
     "emotion": "Angry",
     "image": "WillowAngry",
+    "friendship": -20,
+    "love": -20,
     "responses": [
       {
         "response": "I didn't mean it in a bad way. You're just unique",
@@ -138,6 +143,8 @@
     "dialog": "Oh, don't worry, I'll try to explain it better. (I need to write an explanation)",
     "emotion": "Happy",
     "image": "WillowHappy",
+    "friendship": 10,
+    "love": 5,
     "responses": [
       {
         "response": "okay, I think i get it now, I'll keep that in mind",
@@ -151,6 +158,8 @@
     "dialog": "Please don't call it that, but I'll let it slide for now..",
     "emotion": "Happy",
     "image": "WillowHappy",
+    "friendship": 10,
+    "love": 5,
     "responses": [
       {
         "link": "next"
@@ -163,6 +172,8 @@
     "dialog": "There's nothing wrong with being non-binary. You're the weird one for treating me like that. I'll take my leave now, you're clearly not what I'm looking for.",
     "emotion": "Angry",
     "image": "WillowAngry",
+    "friendship": -20,
+    "love": -20,
     "responses": [
       {
         "link": "dateEnds"

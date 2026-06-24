@@ -10,7 +10,7 @@ export class ChoiceUI extends ScreenElement {
     }
 
     onInitialize(engine) {
-        //friendship bar en love bar
+        //friendshipbar and lovebar
         let lovebarBackground = new Actor({
             x: 1050,
             y: 40,
@@ -87,7 +87,7 @@ export class ChoiceUI extends ScreenElement {
         this.scene.selectResponse(responseData);
     }
 
-    //De friendship- en lovebar moeten omhoog en omlaag kunnen gaan.
+    //The friendship- and lovebar need to be able to go up and down
     changeLove(number) {
         this.currentLove += number;
         if (this.currentLove < 0) this.currentLove = 0;
