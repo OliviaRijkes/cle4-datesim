@@ -1,5 +1,5 @@
 import {Actor, Vector} from "excalibur";
-import { Resources } from "../resources";
+import {Resources} from "../resources";
 
 export class Character extends Actor {
     constructor() {
@@ -31,7 +31,7 @@ export class Character extends Actor {
         //the choices the player makes at the end of each branch
         //each choice changes the current branch
         //in the choice on the ui it displays the first dialog in the text
-        //when choosen it is displayed on the maintext and you go through it like normal dialog and it ends into the new branch
+        //when chosen it is displayed on the maintext and you go through it like normal dialog and it ends into the new branch
         this.choices = {
             begin: [
                 {

@@ -12,6 +12,9 @@ const Resources = {
     WillowAngry: new ImageSource('images/character1.jpg'),
     WillowConfused: new ImageSource('images/character1.jpg'),
     WillowFlustered: new ImageSource('images/character1.jpg'),
+    OnyxHappy: new ImageSource('images/onyx.png'),
+    OnyxAwkward: new ImageSource('images/onyx.png'),
+    OnyxAnnoyed: new ImageSource('images/onyx.png'),
     Font: new FontSource('images/Merriweather-VariableFont_opsz,wdth,wght.ttf', 'StandertFont'),
 }
 

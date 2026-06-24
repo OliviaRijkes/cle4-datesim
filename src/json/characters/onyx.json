@@ -2,21 +2,309 @@
   {
     "id": "begin",
     "name": "Onyx",
-    "dialog": "Heyy, I'm Onyx, what's your name?",
+    "dialog": "Hello! I’m Onyx. You must be my blind date?",
     "emotion": "Happy",
     "image": "OnyxHappy",
     "responses": [
       {
-        "response": "Hello, I'm {Player},nice to meet you.",
+        "response": "Yup, that’s me! {Player} is the name. Nice to meet you.",
+        "link": "confident"
+      },
+      {
+        "response": "What? I’m not blind.",
+        "link": "funny"
+      },
+      {
+        "response": "Yes, I'm {Player}. Nice to meet you.",
         "link": "normal"
+      }
+    ]
+  },
+  {
+    "id": "confident",
+    "name": "Onyx",
+    "dialog": "Haha, nice to meet you too, {Player}",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "friendship": 10,
+    "love": 10,
+    "responses": [
+      {
+        "link": "next"
+      }
+    ]
+  },
+  {
+    "id": "funny",
+    "name": "Onyx",
+    "dialog": "Hahaha, You're funny, what's your name?",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "friendship": 10,
+    "love": 20,
+    "responses": [
+      {
+        "response": "I wasn’t joking... I’m not blind.",
+        "link": "awkward"
       },
       {
-        "response": "That's a cute name. I'm {Player}, nice to meet you.",
-        "link": "compliment"
+        "response": "I’m {Player}. Nice to meet you.",
+        "link": "normal"
+      }
+    ]
+  },
+  {
+    "id": "awkward",
+    "name": "Onyx",
+    "dialog": "Oh, uhm.. Don’t worry about it. I know you’re not blind.",
+    "emotion": "Awkward",
+    "image": "OnyxAwkward",
+    "love": -20,
+    "responses": [
+      {
+        "link": "awkward2"
+      }
+    ]
+  },
+  {
+    "id": "awkward2",
+    "name": "Onyx",
+    "dialog": "I was asking if you were waiting here for a date?",
+    "emotion": "Awkward",
+    "image": "OnyxAwkward",
+    "responses": [
+      {
+        "response": "Oh! Yes I am. Hi, I’m {Player}.",
+        "link": "silly"
       },
       {
-        "response": "HAIII! I’m {Player}!,Nice to meet you too!!",
-        "link": "energetic"
+        "response": "Why would you say it like that… But yes I am. And the name’s {Player}.",
+        "link": "idiot"
+      }
+    ]
+  },
+  {
+    "id": "silly",
+    "name": "Onyx",
+    "dialog": "You’re silly. It’s nice to meet you, {Player}",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "friendship": 5,
+    "love": 5,
+    "responses": [
+      {
+        "response": "It's nice to meet you too.",
+        "link": "next"
+      }
+    ]
+  },
+  {
+    "id": "idiot",
+    "name": "Onyx",
+    "dialog": "It’s a common way of saying it… But let’s move on",
+    "emotion": "Annoyed",
+    "image": "OnyxAnnoyed",
+    "friendship": -20,
+    "love": -20,
+    "responses": [
+      {
+        "link": "next"
+      }
+    ]
+  },
+  {
+    "id": "normal",
+    "name": "Onyx",
+    "dialog": "Nice to meet you too.",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "friendship": 10,
+    "love": 10,
+    "responses": [
+      {
+        "link": "next"
+      }
+    ]
+  },
+  {
+    "id": "next",
+    "name": "Onyx",
+    "dialog": "So.. Have you ever been on a date before?",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "responses": [
+      {
+        "response": "Nope, this is my first date.",
+        "link": "first"
+      },
+      {
+        "response": "Yes, my friend has been setting me up on some dates lately. I’ve been trying to find the right person.",
+        "link": "friend"
+      },
+      {
+        "response": "Yes. You’re one of many people I’m seeing.",
+        "link": "seriously"
+      }
+    ]
+  },
+  {
+    "id": "first",
+    "name": "Onyx",
+    "dialog": "Oh! I hope I don’t disappoint...",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "responses": [
+      {
+        "response": "We’ll see.",
+        "link": "cheeky"
+      },
+      {
+        "response": "Don’t worry. It’s not your fault if things don’t work out.",
+        "link": "sweet"
+      }
+    ]
+  },
+  {
+    "id": "first",
+    "name": "Onyx",
+    "dialog": "Oh! I hope I don’t disappoint...",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "responses": [
+      {
+        "response": "We’ll see.",
+        "link": "cheeky"
+      },
+      {
+        "response": "Don’t worry. It’s not your fault if things don’t work out.",
+        "link": "sweet"
+      }
+    ]
+  },
+  {
+    "id": "cheeky",
+    "name": "Onyx",
+    "dialog": "...",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "responses": [
+      {
+        "response": "We’ll see.",
+        "link": "cheeky"
+      },
+      {
+        "response": "Don’t worry. It’s not your fault if things don’t work out.",
+        "link": "sweet"
+      }
+    ]
+  },
+  {
+    "id": "sweet",
+    "name": "Onyx",
+    "dialog": "...",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "responses": [
+      {
+        "response": "We’ll see.",
+        "link": "cheeky"
+      },
+      {
+        "response": "Don’t worry. It’s not your fault if things don’t work out.",
+        "link": "sweet"
+      }
+    ]
+  },
+  {
+    "id": "friend",
+    "name": "Onyx",
+    "dialog": "I see. That’s nice of him.",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "responses": [
+      {
+        "link": "friend2"
+      }
+    ]
+  },
+  {
+    "id": "friend2",
+    "name": "Onyx",
+    "dialog": "Any luck so far?",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "responses": [
+      {
+        "response": "Not yet. I’m hoping you might be the one",
+        "link": "friend2"
+      },
+      {
+        "response": "Well there is someone… but I’m not quite sure yet.",
+        "link": "friend2"
+      }
+    ]
+  },
+  {
+    "id": "seriously",
+    "name": "Onyx",
+    "dialog": "What do you mean by that?",
+    "emotion": "Annoyed",
+    "image": "OnyxAnnoyed",
+    "friendship": -10,
+    "love": -10,
+    "responses": [
+      {
+        "response": "Just that I’ve been going on a lot of dates lately. I’m trying to find the right person.",
+        "link": "complicated"
+      },
+      {
+        "response": "Just like I said. I’m seeing multiple people at the same time. Do you have a problem with that?  ",
+        "link": "fuckboy"
+      }
+    ]
+  },
+  {
+    "id": "complicated",
+    "name": "Onyx",
+    "dialog": "Oh okay, yea, love can be complicated at times.",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "friendship": 10,
+    "love": 5,
+    "responses": [
+      {
+        "response": "...",
+        "link": "..."
+      },
+      {
+        "response": "...",
+        "link": "..."
+      }
+    ]
+  },
+  {
+    "id": "fuckboy",
+    "name": "Onyx",
+    "dialog": "Well yea. I’m not into fuckboys.",
+    "emotion": "Annoyed",
+    "image": "OnyxAnnoyed",
+    "friendship": -30,
+    "love": -50,
+    "responses": [
+      {
+        "link": "fuckboy2"
+      }
+    ]
+  },
+  {
+    "id": "fuckboy2",
+    "name": "Onyx",
+    "dialog": "I’m leaving. Change your attitude if you ever want to find true love.",
+    "emotion": "Annoyed",
+    "image": "OnyxAnnoyed",
+    "responses": [
+      {
+        "link": "badEnding"
       }
     ]
   }
