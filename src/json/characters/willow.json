@@ -26,18 +26,7 @@
     "dialog": "...",
     "emotion": "Happy",
     "image": "WillowHappy",
-    "responses": [
-      {
-        "link": "pronouns"
-      }
-    ]
-  },
-  {
-    "id": "energetic",
-    "name": "willow",
-    "dialog": "Oh, thank you. I like yours too",
-    "emotion": "Flustered",
-    "image": "WillowFlustered",
+    "friendship": 20,
     "responses": [
       {
         "link": "pronouns"
@@ -47,9 +36,25 @@
   {
     "id": "compliment",
     "name": "willow",
+    "dialog": "Oh, thank you. I like yours too",
+    "emotion": "Flustered",
+    "image": "WillowFlustered",
+    "friendship": 10,
+    "love": 20,
+    "responses": [
+      {
+        "link": "pronouns"
+      }
+    ]
+  },
+  {
+    "id": "energetic",
+    "name": "willow",
     "dialog": "...",
     "emotion": "Confused",
     "image": "WillowConfused",
+    "friendship": 15,
+    "love": 5,
     "responses": [
       {
         "link": "pronouns"

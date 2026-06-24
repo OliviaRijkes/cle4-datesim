@@ -1,4 +1,4 @@
-import {Actor, Keys, Scene, Vector} from "excalibur";
+import {Actor, Color, Keys, Scene, Vector} from "excalibur";
 import {DateUI} from "../ui/willowDateui.js";
 import willowData from "../../json/characters/willow.json";
 import {Resources} from "../resources.js";
@@ -91,6 +91,16 @@ export class WillowDatescene extends Scene {
         this.choices.showChoices(
             this.branch.responses
         );
+
+        // Change friendship if present
+        if (this.branch.friendship) {
+            this.choices.changeFriendship(this.branch.friendship);
+        }
+
+        // Change love if present
+        if (this.branch.love) {
+            this.choices.changeLove(this.branch.love);
+        }
     }
 
     // change the image based on the emotion of the character
@@ -110,17 +120,5 @@ export class WillowDatescene extends Scene {
 
         // Change branch based on which link is in the json (in responses)
         this.changeBranch(responseData.link);
-
     }
-
-    // love bar will need to change based on which response
-    changeLove(number) {
-
-    }
-
-    // friendship bar will need to change based on which response
-    changeFriendship(number) {
-
-    }
-
 }
