@@ -1,8 +1,8 @@
 import {Actor, Color, Keys, Scene, Vector} from "excalibur";
-import {DateUI} from "../ui/willowDateui.js";
+import {DateUI} from "../ui/dateUI.js";
 import willowData from "../../json/characters/willow.json";
 import {Resources} from "../resources.js";
-import {ChoiceUI} from "../ui/willowChoiceUI.js";
+import {ChoiceUI} from "../ui/choiceUI.js";
 
 export class WillowDatescene extends Scene {
 
