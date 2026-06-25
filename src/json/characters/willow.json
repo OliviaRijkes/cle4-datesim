@@ -53,8 +53,7 @@
     "dialog": "...",
     "emotion": "Confused",
     "image": "WillowConfused",
-    "friendship": 15,
-    "love": 5,
+    "friendship": 10,
     "responses": [
       {
         "link": "pronouns"
@@ -92,7 +91,7 @@
     "friendship": 15,
     "responses": [
       {
-        "link": "next"
+        "link": "hobbies"
       }
     ]
   },
@@ -102,11 +101,10 @@
     "dialog": "It means I’m neither male nor female.",
     "emotion": "Happy",
     "image": "WillowHappy",
-    "friendship": 10,
     "responses": [
       {
         "response": "okay, I think i get it now, I'll keep that in mind",
-        "link": "next"
+        "link": "understanding"
       },
       {
         "response": "I still don't get it completely",
@@ -143,12 +141,10 @@
     "dialog": "Oh, don't worry, I'll try to explain it better. (I need to write an explanation)",
     "emotion": "Happy",
     "image": "WillowHappy",
-    "friendship": 10,
-    "love": 5,
     "responses": [
       {
         "response": "okay, I think i get it now, I'll keep that in mind",
-        "link": "next"
+        "link": "understanding"
       }
     ]
   },
@@ -156,13 +152,13 @@
     "id": "fix",
     "name": "willow",
     "dialog": "Please don't call it that, but I'll let it slide for now..",
-    "emotion": "Happy",
-    "image": "WillowHappy",
+    "emotion": "Neutral",
+    "image": "WillowNeutral",
     "friendship": 10,
     "love": 5,
     "responses": [
       {
-        "link": "next"
+        "link": "hobbies"
       }
     ]
   },
@@ -176,7 +172,65 @@
     "love": -20,
     "responses": [
       {
-        "link": "dateEnds"
+        "link": "dateEndsBadly"
+      }
+    ]
+  },
+  {
+    "id": "dateEndsBadly",
+    "name": "willow",
+    "dialog": "I'll take my leave now, you're clearly not what I'm looking for.",
+    "emotion": "Angry",
+    "image": "WillowAngry",
+    "responses": [
+      {
+        "link": "homepage?"
+      }
+    ]
+  },
+  {
+    "id": "hobbies",
+    "name": "willow",
+    "dialog": "Anyway, let’s get to know each other better. What are your hobbies?",
+    "emotion": "Happy",
+    "image": "WillowHappy",
+    "responses": [
+      {
+        "response": "I don’t have any.",
+        "link": "free time"
+      },
+      {
+        "response": "I love hiking!",
+        "link": "same"
+      },
+      {
+        "response": "I like sports.",
+        "link": "which"
+      },
+      {
+        "response": "I like gaming.",
+        "link": "together"
+      }
+    ]
+  },
+  {
+    "id": "free time",
+    "name": "willow",
+    "dialog": "Oh, then is there anything else you like to do in your free time?",
+    "emotion": "Happy",
+    "image": "WillowHappy",
+    "responses": [
+      {
+        "response": "Yes! I love going on dates.",
+        "link": "intention"
+      },
+      {
+        "response": "Not really",
+        "link": "uninteresting"
+      },
+      {
+        "response": "",
+        "link": ""
       }
     ]
   }

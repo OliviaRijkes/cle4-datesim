@@ -248,8 +248,8 @@
     "id": "seriously",
     "name": "Onyx",
     "dialog": "What do you mean by that?",
-    "emotion": "Annoyed",
-    "image": "OnyxAnnoyed",
+    "emotion": "Angry",
+    "image": "OnyxAngry",
     "friendship": -10,
     "love": -10,
     "responses": [
@@ -273,21 +273,16 @@
     "love": 5,
     "responses": [
       {
-        "response": "...",
-        "link": "..."
-      },
-      {
-        "response": "...",
-        "link": "..."
+        "link": "genderfluid"
       }
     ]
   },
   {
     "id": "fuckboy",
     "name": "Onyx",
-    "dialog": "Well yea. I’m not into fuckboys.",
-    "emotion": "Annoyed",
-    "image": "OnyxAnnoyed",
+    "dialog": "Well yea. I’m not into f*ckboys.",
+    "emotion": "Angry",
+    "image": "OnyxAngry",
     "friendship": -30,
     "love": -50,
     "responses": [
@@ -300,11 +295,110 @@
     "id": "fuckboy2",
     "name": "Onyx",
     "dialog": "I’m leaving. Change your attitude if you ever want to find true love.",
-    "emotion": "Annoyed",
-    "image": "OnyxAnnoyed",
+    "emotion": "Angry",
+    "image": "OnyxAngry",
     "responses": [
       {
         "link": "badEnding"
+      }
+    ]
+  },
+  {
+    "id": "genderfluid",
+    "name": "Onyx",
+    "dialog": "I am genderfluid by the way, is that a problem for you?",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "responses": [
+      {
+        "response": "Of course not! What pronouns should I use for you?",
+        "link": "pronouns"
+      },
+      {
+        "response": "Well.. it's not really my preference.",
+        "link": "continue?"
+      }
+    ]
+  },
+  {
+    "id": "pronouns",
+    "name": "Onyx",
+    "dialog": "It changes based on whether I feel more masculine or feminine, right now I feel more masculine.",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "friendship": 10,
+    "love": 15,
+    "responses": [
+      {
+        "link": "pronouns2"
+      }
+    ]
+  },
+  {
+    "id": "pronouns2",
+    "name": "Onyx",
+    "dialog": "So I'd prefer it if you use he/him pronouns right now.",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "responses": [
+      {
+        "link": "pronouns3"
+      }
+    ]
+  },
+  {
+    "id": "pronouns3",
+    "name": "Onyx",
+    "dialog": " But when you don't know how I'm feeling at the moment or if it is too complicated for you, you can just use anything.",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "responses": [
+      {
+        "response": "Got it.",
+        "link": "yay"
+      },
+      {
+        "response": "Okay then I'll just use everything.",
+        "link": "oh"
+      }
+    ]
+  },
+  {
+    "id": "yay",
+    "name": "Onyx",
+    "dialog": "...",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "friendship": 5,
+    "love": 15,
+    "responses": [
+      {
+        "link": "questions"
+      }
+    ]
+  },
+  {
+    "id": "oh",
+    "name": "Onyx",
+    "dialog": "Oh okay.",
+    "emotion": "Awkward",
+    "image": "OnyxAwkward",
+    "love": -10,
+    "responses": [
+      {
+        "link": "questions"
+      }
+    ]
+  },
+  {
+    "id": "questions",
+    "name": "Onyx",
+    "dialog": "Anyway.. Is there anything you're curious about?",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "responses": [
+      {
+        "link": "questions"
       }
     ]
   }
