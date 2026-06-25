@@ -103,12 +103,14 @@ export class OnyxDatescene extends Scene {
         }
     }
 
-    // change the image based on the emotion of the character
+    // change the image based on the emotion of the character in json
     changeEmotion(imageName) {
-        this.dateCharacter.graphics.use(
-            Resources[imageName].toSprite()
-        );
+        const sprite = Resources[imageName].toSprite();
 
+        // you might need to change this again for each character
+        sprite.scale = new Vector(0.35, 0.35);
+
+        this.dateCharacter.graphics.use(sprite);
     }
 
     selectResponse(responseData) {
