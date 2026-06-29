@@ -345,7 +345,7 @@
   {
     "id": "pronouns3",
     "name": "Onyx",
-    "dialog": " But when you don't know how I'm feeling at the moment \nor if it is too complicated for you, \nyou can just use anything.",
+    "dialog": " But when you don't know how I'm feeling at \nthe moment, or if it is too complicated for you, \nyou can just use anything.",
     "emotion": "Happy",
     "image": "OnyxHappy",
     "responses": [
