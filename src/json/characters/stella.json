@@ -77,7 +77,12 @@
     "emotion": "Angry",
     "image": "StellaAngry",
     "friendship": -50,
-    "love": -50
+    "love": -50,
+    "responses": [
+      {
+        "link": "homepage?"
+      }
+    ]
   },
   {
     "id": "thinIce",
@@ -121,7 +126,7 @@
         "link": "games"
       },
       {
-        "response": "I'm usually listening to music.\nI like to go to concert,\nlocal and bigger ones",
+        "response": "I'm usually listening to music.\nI like to go to concerts,\nlocal and bigger ones",
         "link": "music"
       }
     ]
@@ -159,8 +164,8 @@
     "love": -20,
     "responses": [
       {
-        "response": "I play compatible games that's just how it works",
-        "link": "compatiblegames"
+        "response": "I play competitive games that's just how it works",
+        "link": "competitivegames"
       },
       {
         "response": "Didn't want to make it sound like that, we can play non compatible if you want?",
@@ -169,7 +174,7 @@
     ]
   },
   {
-    "id": "compatiblegames",
+    "id": "competitivegames",
     "name": "Stella",
     "dialog": "If you say so...",
     "emotion": "irritated",
@@ -190,7 +195,7 @@
   {
     "id": "playgames",
     "name": "Stella",
-    "dialog": "That sound good what game are you thinking of?",
+    "dialog": "That sounds good what game are you thinking of?",
     "emotion": "Happy",
     "image": "StellaHappy",
     "friendship": 10,
@@ -216,11 +221,11 @@
     "love": 10,
     "responses": [
       {
-        "response": "that will be an easy win for you, i quite such at the game",
+        "response": "That will be an easy win for you, I suck at the game",
         "link": "bad"
       },
       {
-        "response": "Carefull, i'm really good at spotting the intruders.",
+        "response": "Carefull, I'm really good at spotting the intruders.",
         "link": "good"
       }
     ]
@@ -228,14 +233,14 @@
   {
     "id": "ourcraft",
     "name": "Stella",
-    "dialog": "sounds fun. I quite like those designing minigames, i'm pretty good at designing.",
+    "dialog": "Sounds fun. I quite like those designing minigames, I'm pretty good at designing.",
     "emotion": "Happy",
     "image": "StellaHappy",
     "friendship": 10,
     "love": 15,
     "responses": [
       {
-        "response": "you would have to help me out then i suck at designing",
+        "response": "You would have to help me out then I suck at designing",
         "link": "bad"
       },
       {
@@ -269,7 +274,7 @@
     "love": 10,
     "responses": [
       {
-        "response": "yeah sure,,, but you mentioned you liked music, what do you listen to?",
+        "response": "yeah sure... but you mentioned you liked music, what do you listen to?",
         "link": "stellamusic"
       }
     ]
@@ -278,8 +283,8 @@
     "id": "music",
     "name": "Stella",
     "dialog": "Oh shit! I love music. What do you listen to",
-    "emotion": "Exited",
-    "image": "StellaExited",
+    "emotion": "Excited",
+    "image": "StellaExcited",
     "friendship": 10,
     "love": 15,
     "responses": [
@@ -301,8 +306,8 @@
     "id": "alternative",
     "name": "Stella",
     "dialog": "Nice! I also like those bands. I recommend giving A poor mans drink a listen if you haven't they're really good!",
-    "emotion": "Exited",
-    "image": "StellaExited",
+    "emotion": "Excited",
+    "image": "StellaExcited",
     "love": 15,
     "responses": [
       {
@@ -332,7 +337,7 @@
     "friendship": 10,
     "responses": [
       {
-        "response": "Thats fine, what do you like to listen to?",
+        "response": "That's fine, what do you like to listen to?",
         "link": "stellamusic"
       },
       {
@@ -356,7 +361,7 @@
     "responses": [
       {
         "response": "I'd expect you'd listen to those weird screamo or emo songs",
-        "link": "unconfortablemusic"
+        "link": "uncomfortable music"
       },
       {
         "response": "Oh didn't expect that! What do you normally listen to?",
@@ -402,7 +407,7 @@
     "responses": [
       {
         "response": "true, i'm sorry for acting like that.",
-        "link": "apolagieexcepted"
+        "link": "apologyaccepted"
       },
       {
         "response": "Well, I'm a real fan so i don't have to prove anything.",
@@ -415,15 +420,15 @@
     ]
   },
   {
-    "id": "apolagieexcepted",
+    "id": "apologyaccepted",
     "name": "Stella",
-    "dialog": "Apolagie excepted, but don't let it happen again",
+    "dialog": "Apology accepted, but don't let it happen again",
     "emotion": "happy",
     "image": "StellaHappy",
     "responses": [
       {
         "response": "Ofcourse, maybe lets talk about something else. Do you have other hobbies?",
-        "link": "otherhobbied"
+        "link": "otherhobbies"
       },
       {
         "response": "Right. Lets try this again, what music do you listen to?",
@@ -438,21 +443,26 @@
     "emotion": "Angry",
     "image": "StellaAngry",
     "love": -50,
-    "friendship": -50
+    "friendship": -50,
+    "responses": [
+      {
+        "link": "homepage?"
+      }
+    ]
   },
   {
     "id": "stellamusic",
     "name": "Stella",
-    "dialog": "My favourite band is Steelica. My parents always played it so i kind of grew up on it. From there i discovert other bands i like. ",
+    "dialog": "My favourite band is Steelica. My parents always played it so i kind of grew up on it. From there i discovered other bands i like. ",
     "emotion": "happy",
     "image": "StellaHappy",
     "responses": [
       {
-        "response": "Steelica is pretty good. What are the other band you like?",
+        "response": "Steelica is pretty good. What are the other bands you like?",
         "link": "otherbands"
       },
       {
-        "response": "My favourite band is also Steelica. I'm kind of jalous my parents aren't into it so much sadly.",
+        "response": "My favourite band is also Steelica. I'm kind of jealous my parents aren't into it so much sadly.",
         "link": "favoriteband"
       },
       {
@@ -464,16 +474,16 @@
   {
     "id": "otherbands",
     "name": "Stella",
-    "dialog": "My favourite band is Steelica. My parents always played it so i kind of grew up on it. From there i discovert other bands i like. ",
+    "dialog": "My favourite band is Steelica. My parents always played it so i kind of grew up on it. From there i discovered other bands i like. ",
     "emotion": "happy",
     "image": "StellaHappy",
     "responses": [
       {
-        "response": "Steelica is pretty good. What are the other band you like?",
+        "response": "Steelica is pretty good. What are the other bands you like?",
         "link": "otherbands"
       },
       {
-        "response": "My favourite band is also Steelica. I'm kind of jalous my parents aren't into it so much sadly.",
+        "response": "My favourite band is also Steelica. I'm kind of jealous my parents aren't into it so much sadly.",
         "link": "favoriteband"
       },
       {
@@ -482,5 +492,4 @@
       }
     ]
   }
-
 ]
