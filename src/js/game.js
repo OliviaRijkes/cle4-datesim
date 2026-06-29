@@ -4,6 +4,7 @@ import {Resources, ResourceLoader} from './resources.js'
 import {WillowDatescene} from "./scenes/willowDatescene.js";
 import {OnyxDatescene} from "./scenes/onyxDatescene.js";
 import {StellaDatescene} from "./scenes/stellaDatescene.js";
+import {EzraDatescene} from "./scenes/ezraDatescene.js";
 
 export class Game extends Engine {
 
@@ -30,9 +31,11 @@ export class Game extends Engine {
         this.addScene("dateWillow", new WillowDatescene())
         this.addScene("dateOnyx", new OnyxDatescene())
         this.addScene("dateStella", new StellaDatescene())
+        this.addScene("dateEzra", new EzraDatescene())
         // this.goToScene("dateWillow")
         // this.goToScene("dateOnyx")
-        this.goToScene("dateStella")
+        // this.goToScene("dateStella")
+        this.goToScene("dateEzra")
 
     }
 }
