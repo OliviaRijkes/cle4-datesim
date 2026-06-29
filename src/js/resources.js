@@ -22,8 +22,8 @@ const Resources = {
     EzraHappy: new ImageSource('images/ezraHappy.png'),
     Background: new ImageSource('images/cafe.jpg'),
     Table: new ImageSource('images/Tafel.png'),
-    Choice: new ImageSource('images/keuzevlakken.png'),
-    Maintext: new ImageSource('images/MainText.png'),
+    Choice: new ImageSource('images/choicevlakken55%.png'),
+    Maintext: new ImageSource('images/textvlakken55%.png'),
     Font: new FontSource('images/Merriweather-VariableFont_opsz,wdth,wght.ttf', 'StandardFont'),
 }
 
