@@ -1,7 +1,7 @@
 [
   {
     "id": "begin",
-    "name": "willow",
+    "name": "Willow",
     "dialog": "Hi! I'm Willow, nice to meet you.",
     "emotion": "Happy",
     "image": "WillowHappy",
@@ -15,14 +15,14 @@
         "link": "compliment"
       },
       {
-        "response": "HAIII! I’m {Player}!,\nNice to meet you too!!",
+        "response": "HAIII! I’m {Player}!,\nNice to meet you toooo!!",
         "link": "energetic"
       }
     ]
   },
   {
     "id": "normal",
-    "name": "willow",
+    "name": "Willow",
     "dialog": "...",
     "emotion": "Happy",
     "image": "WillowHappy",
@@ -35,7 +35,7 @@
   },
   {
     "id": "compliment",
-    "name": "willow",
+    "name": "Willow",
     "dialog": "Oh, thank you. I like yours too",
     "emotion": "Flustered",
     "image": "WillowFlustered",
@@ -49,7 +49,7 @@
   },
   {
     "id": "energetic",
-    "name": "willow",
+    "name": "Willow",
     "dialog": "...",
     "emotion": "Confused",
     "image": "WillowConfused",
@@ -62,7 +62,7 @@
   },
   {
     "id": "pronouns",
-    "name": "willow",
+    "name": "Willow",
     "dialog": "I'm non-binary by the way,\nmy pronouns are they/them.",
     "emotion": "Happy",
     "image": "WillowHappy",
@@ -83,7 +83,7 @@
   },
   {
     "id": "understanding",
-    "name": "willow",
+    "name": "Willow",
     "dialog": "Thanks, I will too",
     "emotion": "Happy",
     "image": "WillowHappy",
@@ -97,7 +97,7 @@
   },
   {
     "id": "meaning",
-    "name": "willow",
+    "name": "Willow",
     "dialog": "It means I’m neither male nor female.",
     "emotion": "Happy",
     "image": "WillowHappy",
@@ -118,7 +118,7 @@
   },
   {
     "id": "cruel",
-    "name": "willow",
+    "name": "Willow",
     "dialog": "What is that supposed to mean?",
     "emotion": "Angry",
     "image": "WillowAngry",
@@ -137,7 +137,7 @@
   },
   {
     "id": "meaning2",
-    "name": "willow",
+    "name": "Willow",
     "dialog": "Oh, don't worry, I'll try to explain it better.\nNon-binary means I have no gender\nand they/them is what I use instead of he or she.",
     "emotion": "Happy",
     "image": "WillowHappy",
@@ -150,7 +150,7 @@
   },
   {
     "id": "fix",
-    "name": "willow",
+    "name": "Willow",
     "dialog": "Please don't call it that, but I'll let it slide for now..",
     "emotion": "Neutral",
     "image": "WillowNeutral",
@@ -164,7 +164,7 @@
   },
   {
     "id": "ruined",
-    "name": "willow",
+    "name": "Willow",
     "dialog": "There's nothing wrong with being non-binary.\nYou're the weird one for treating me like that.",
     "emotion": "Angry",
     "image": "WillowAngry",
@@ -178,7 +178,7 @@
   },
   {
     "id": "date ends badly",
-    "name": "willow",
+    "name": "Willow",
     "dialog": "I'll take my leave now,\nyou're clearly not what I'm looking for.",
     "emotion": "Angry",
     "image": "WillowAngry",
@@ -190,7 +190,7 @@
   },
   {
     "id": "hobbies",
-    "name": "willow",
+    "name": "Willow",
     "dialog": "Anyway, let’s get to know each other better.\nWhat are your hobbies?",
     "emotion": "Happy",
     "image": "WillowHappy",
@@ -215,7 +215,7 @@
   },
   {
     "id": "free time",
-    "name": "willow",
+    "name": "Willow",
     "dialog": "Oh, then is there anything else\nyou like to do in your free time?",
     "emotion": "Neutral",
     "image": "WillowNeutral",
@@ -238,7 +238,7 @@
   },
   {
     "id": "same",
-    "name": "willow",
+    "name": "Willow",
     "dialog": "Wow really? That's one of my hobbies too!\nMaybe we can hike together sometime.",
     "emotion": "Happy",
     "image": "WillowHappy",
@@ -265,7 +265,7 @@
   },
   {
     "id": "which sport",
-    "name": "willow",
+    "name": "Willow",
     "dialog": "Ooh, which sport?",
     "emotion": "Happy",
     "image": "WillowHappy",
@@ -273,16 +273,98 @@
     "love": 5,
     "responses": [
       {
-        "response": "",
-        "link": ""
+        "response": "Swimming",
+        "link": "swimming"
       },
       {
-        "response": "",
-        "link": ""
+        "response": "I work out at the gym a lot",
+        "link": "gym"
       },
       {
-        "response": "",
-        "link": ""
+        "response": "Football",
+        "link": "not great"
+      },
+      {
+        "response": "Basketball",
+        "link": "not great"
+      }
+    ]
+  },
+  {
+    "id": "swimming",
+    "name": "Willow",
+    "dialog": "Oh, I love swimming! I don't do it as a sport, but it's a fun activity.",
+    "emotion": "Happy",
+    "image": "WillowHappy",
+    "friendship": 5,
+    "love": 5,
+    "responses": [
+      {
+        "response": "We should go together some time!",
+        "link": "sure"
+      },
+      {
+        "response": "Maybe you could start!",
+        "link": "rather"
+      }
+    ]
+  },
+  {
+    "id": "gym",
+    "name": "Willow",
+    "dialog": "I don't go to the gym myself, but that can be fun",
+    "emotion": "Happy",
+    "image": "WillowHappy",
+    "friendship": 5,
+    "love": 5,
+    "responses": [
+      {
+        "response": "I can see that",
+        "link": "excuse me"
+      },
+      {
+        "response": "We should go together some time then!",
+        "link": "sure"
+      }
+    ]
+  },
+  {
+    "id": "not great",
+    "name": "Willow",
+    "dialog": "Im not the best at that, but it can be fun from time to time",
+    "emotion": "Happy",
+    "image": "WillowHappy",
+    "friendship": 5,
+    "love": 5,
+    "responses": [
+      {
+        "response": "That's okay, as long as you have fun",
+        "link": "sure"
+      },
+      {
+        "response": "Don't worry, I can teach you",
+        "link": "nice"
+      },
+      {
+        "response": "Well, it's hard beating me after all. No one ever has.",
+        "link": "doubt"
+      }
+    ]
+  },
+  {
+    "id": "date ends well",
+    "name": "Willow",
+    "dialog": "It's getting late, we should go soon,\nbut this was fun, I'm hoping to see you again.",
+    "emotion": "Happy",
+    "image": "WillowHappy",
+    "responses": [
+      {
+        "response": "I would also like to go on another date with you",
+        "link": "homepage?"
+      },
+      {
+        "response": "I need to think about it first, goodbye for now.",
+        "link": "homepage?"
       }
     ]
   }
