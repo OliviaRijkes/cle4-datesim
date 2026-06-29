@@ -66,10 +66,10 @@ export class ChoiceUI extends ScreenElement {
 
             const label = new Label({
                 text: response.response,
-                pos: new Vector(900, 500 + index * 50),
+                pos: new Vector(890, 620 - index * 120),
                 font: Resources.Font.toFont({
                     unit: FontUnit.Px,
-                    size: 24,
+                    size: 20,
                     color: Color.Black
                 })
             });
@@ -77,7 +77,13 @@ export class ChoiceUI extends ScreenElement {
             label.on("pointerdown", () => {
                 this.choiceClick(response);
             });
-
+            label.z = 1;
+            let choiceBox = new Actor();
+            choiceBox.graphics.use(Resources.Choice.toSprite());
+            choiceBox.z = 1
+            choiceBox.scale = new Vector(1.15, 1);
+            choiceBox.pos = new Vector(1050, 650 - index * 120);
+            this.addChild(choiceBox);
             this.choiceLabels.push(label);
             this.addChild(label);
         });

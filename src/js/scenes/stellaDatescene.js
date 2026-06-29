@@ -3,6 +3,7 @@ import {DateUI} from "../ui/dateUI.js";
 import stellaData from "../../json/characters/stella.json";
 import {Resources} from "../resources.js";
 import {ChoiceUI} from "../ui/choiceUI.js";
+import {Background} from "../ui/background.js";
 
 export class StellaDatescene extends Scene {
 
@@ -18,7 +19,7 @@ export class StellaDatescene extends Scene {
 
         // Character needs to be an actor so the image of the character can be shown on the screen
         this.dateCharacter = new Actor({
-            pos: new Vector(640, 360)
+            pos: new Vector(640, 400)
         });
 
         this.add(this.dateCharacter);
@@ -36,6 +37,11 @@ export class StellaDatescene extends Scene {
 
         this.ui = new DateUI();
         this.choices = new ChoiceUI();
+
+        // background
+        const background = new Background();
+        this.add(background);
+        background.z = -1;
 
         this.add(this.ui);
         this.add(this.choices)

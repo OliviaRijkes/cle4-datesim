@@ -19,6 +19,10 @@ const Resources = {
     StellaIrritated: new ImageSource('images/StellaIrritated.png'),
     StellaAngry: new ImageSource('images/StellaAngry.png'),
     StellaFlirty: new ImageSource('images/Stella.png'),
+    Background: new ImageSource('images/cafe.jpg'),
+    Table: new ImageSource('images/Tafel.png'),
+    Choice: new ImageSource('images/keuzevlakken.png'),
+    Maintext: new ImageSource('images/MainText.png'),
     Font: new FontSource('images/Merriweather-VariableFont_opsz,wdth,wght.ttf', 'StandardFont'),
 }
 

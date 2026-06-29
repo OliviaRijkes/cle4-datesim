@@ -3,6 +3,7 @@ import {DateUI} from "../ui/dateUI.js";
 import onyxData from "../../json/characters/onyx.json";
 import {Resources} from "../resources.js";
 import {ChoiceUI} from "../ui/choiceUI.js";
+import {Background} from "../ui/background.js";
 
 export class OnyxDatescene extends Scene {
 
@@ -36,6 +37,11 @@ export class OnyxDatescene extends Scene {
 
         this.ui = new DateUI();
         this.choices = new ChoiceUI();
+
+        // background
+        const background = new Background();
+        this.add(background);
+        background.z = -1;
 
         this.add(this.ui);
         this.add(this.choices)
