@@ -15,7 +15,7 @@
         "link": "negative"
       },
       {
-        "response": "Hey, nice outfit! My name's {player}.",
+        "response": "Hey, nice outfit! My name's \n{player}.",
         "link": "compliment"
       }
     ]
@@ -43,15 +43,15 @@
     "love": -5,
     "responses": [
       {
-        "response": "Nah you just look a little freaky, like those goth mommies.",
+        "response": "Nah you just look a little freaky,\nlike those goth mommies.",
         "link": "endDate"
       },
       {
-        "response": "Sorry, i just didn't expect the whole look.",
+        "response": "Sorry, i just didn't expect the\nwhole look.",
         "link": "thinIce"
       },
       {
-        "response": "No no no! I was just impressed. You look really good. I was like wow, didn't expect that.",
+        "response": "No no no! I was just impressed.\nYou look really good.\nI was like wow, didn't expect that.",
         "link": "apology"
       }
     ]
@@ -145,7 +145,7 @@
         "link": "stellamusic"
       },
       {
-        "response": "I'm not so sure, I don't like playing\nwith noobs.I like to keep my score up.",
+        "response": "I'm not so sure, I don't like\nplaying with noobs.\nI like to keep my score up.",
         "link": "noobs"
       },
       {
@@ -157,18 +157,18 @@
   {
     "id": "noobs",
     "name": "Stella",
-    "dialog": "So you care more about your score than having fun with a friend? ",
+    "dialog": "So you care more about your score\nthan having fun with a friend? ",
     "emotion": "irritated",
     "image": "StellaIrritated",
     "friendship": -25,
     "love": -20,
     "responses": [
       {
-        "response": "I play competitive games that's just how it works",
+        "response": "I play competitive games\nthat's just how it works",
         "link": "competitivegames"
       },
       {
-        "response": "Didn't want to make it sound like that, we can play non compatible if you want?",
+        "response": "Didn't want to make it sound\nlike that, we can play non compatible\nif you want?",
         "link": "playgames"
       }
     ]
@@ -183,11 +183,11 @@
     "love": -15,
     "responses": [
       {
-        "response": "You said you liked music? what do you listen to?",
+        "response": "You said you liked music?\nWhat do you listen to?",
         "link": "stellamusic"
       },
       {
-        "response": "I mean we could play Ourcraft, if you'd like that",
+        "response": "I mean we could play Ourcraft,\nif you'd like that",
         "link": "ourcraft"
       }
     ]
@@ -233,18 +233,18 @@
   {
     "id": "ourcraft",
     "name": "Stella",
-    "dialog": "Sounds fun. I quite like those designing minigames, I'm pretty good at designing.",
+    "dialog": "Sounds fun. I quite like those designing\nminigames, I'm pretty good at designing.",
     "emotion": "Happy",
     "image": "StellaHappy",
     "friendship": 10,
     "love": 15,
     "responses": [
       {
-        "response": "You would have to help me out then I suck at designing",
+        "response": "You would have to help me out\nthen I suck at designing",
         "link": "bad"
       },
       {
-        "response": "I'm also a bit of a designer myself, we could be a perfect teamup.",
+        "response": "I'm also a bit of a designer myself,\nwe could be a perfect teamup.",
         "link": "good"
       }
     ]
@@ -252,14 +252,14 @@
   {
     "id": "good",
     "name": "Stella",
-    "dialog": "Sounds like a fun challenge! I will send you my username when i get home.",
+    "dialog": "Sounds like a fun challenge!\nI will send you my username when i get home.",
     "emotion": "Happy",
     "image": "StellaHappy",
     "friendship": 5,
     "love": 5,
     "responses": [
       {
-        "response": "I will too! You mentioned you liked music, what do you listen to?",
+        "response": "I will too! You mentioned you\nliked music, what do you listen to?",
         "link": "stellamusic"
       }
     ]
@@ -267,14 +267,14 @@
   {
     "id": "bad",
     "name": "Stella",
-    "dialog": "That's okey, not everyone can be as good as a gamer as me~",
+    "dialog": "That's okey, not everyone can be as good as\na gamer as me~",
     "emotion": "Excited",
     "image": "StellaExcited",
     "friendship": 5,
     "love": 10,
     "responses": [
       {
-        "response": "yeah sure... but you mentioned you liked music, what do you listen to?",
+        "response": "yeah sure... earlier you mentioned\nyou liked music, what do you listen to?",
         "link": "stellamusic"
       }
     ]
@@ -289,15 +289,15 @@
     "love": 15,
     "responses": [
       {
-        "response": "I'm into Linkin Forrest, Radiohand, System of a up. Rock and Metal type of bands",
+        "response": "I'm into Linkin Forrest,\nRadiohand, System of a up.\nRock and Metal type of bands",
         "link": "alternative"
       },
       {
-        "response": "Oh, i like Good bunny, Tyler the destroyer, Snoop cat. Those kind of artist.",
+        "response": "Oh, i like Good bunny, Tyler the\ndestroyer, Snoop cat.\nThose kind of artist.",
         "link": "hiphop"
       },
       {
-        "response": "I really like Babba! and Stayteens, Warmplay, Mr goegoe and occasionally Tailor Fast.",
+        "response": "I really like Babba! and Stayteens,\nWarmplay, Mr goegoe and\noccasionally Tailor Fast.",
         "link": "pop"
       }
     ]
@@ -305,7 +305,7 @@
   {
     "id": "alternative",
     "name": "Stella",
-    "dialog": "Nice! I also like those bands. I recommend giving A poor mans drink a listen if you haven't they're really good!",
+    "dialog": "Nice! I also like those bands. I recommend giving\nA poor mans drink a listen if you haven't they're really good!",
     "emotion": "Excited",
     "image": "StellaExcited",
     "love": 15,
@@ -315,15 +315,15 @@
         "link": "poser"
       },
       {
-        "response": "Enough about music, what other hobbies do you have?",
+        "response": "Enough about music,\nwhat other hobbies do you have?",
         "link": "otherhobbies"
       },
       {
-        "response": "I will thanks! What do you listen to?",
+        "response": "I will thanks!\nWhat do you listen to?",
         "link": "stellamusic"
       },
       {
-        "response": "I know them they are amazing! What do you listen to?",
+        "response": "I know them they are amazing!\nWhat do you listen to?",
         "link": "stellamusic"
       }
     ]
@@ -337,15 +337,15 @@
     "friendship": 10,
     "responses": [
       {
-        "response": "That's fine, what do you like to listen to?",
+        "response": "That's fine,\nwhat do you like to listen to?",
         "link": "stellamusic"
       },
       {
-        "response": "You should give skittles a try tho, but do you have other hobbies?",
+        "response": "You should give skittles a try tho,\nbut do you have other hobbies?",
         "link": "otherhobbies"
       },
       {
-        "response": "You must listen to that heavy shit right with the screams?",
+        "response": "You must listen to that\nheavy shit right with the screams?",
         "link": "unconfortablemusic"
       }
     ]
@@ -353,22 +353,22 @@
   {
     "id": "pop",
     "name": "Stella",
-    "dialog": "I secretly listen to Gabba from time to time, they're really fun.",
+    "dialog": "I secretly listen to Babba from time to time,\nthey're really fun.",
     "emotion": "happy",
     "image": "StellaHappy",
     "love": 10,
     "friendship": 15,
     "responses": [
       {
-        "response": "I'd expect you'd listen to those weird screamo or emo songs",
+        "response": "I'd expect you'd listen to those\nweird screamo or emo songs",
         "link": "uncomfortable music"
       },
       {
-        "response": "Oh didn't expect that! What do you normally listen to?",
+        "response": "Oh didn't expect that!\nWhat do you normally listen to?",
         "link": "stellamusic"
       },
       {
-        "response": "No reason to feel shame about listing to a good artist. Do you have other hobbies?",
+        "response": "No reason to feel shame about\nlisting to a good artist.\nDo you have other hobbies?",
         "link": "otherhobbies"
       }
     ]
@@ -376,22 +376,22 @@
   {
     "id": "poser",
     "name": "Stella",
-    "dialog": "Why should I have to prove to YOU that I'm a fan of a band I recommended.",
+    "dialog": "Why should I have to prove to YOU that I'm a\nfan of a band I recommended.",
     "emotion": "Irritated",
     "image": "StellaIrritated",
     "love": -20,
     "friendship": -10,
     "responses": [
       {
-        "response": "Just wanted to test your knowledge that's all",
+        "response": "Just wanted to test your\nknowledge that's all",
         "link": "thinicetwo"
       },
       {
-        "response": "Sorry didn't know you were going to react like that.",
+        "response": "Sorry didn't know you were going\nto react like that.",
         "link": "thinicetwo"
       },
       {
-        "response": "How else am i going to know you're a real fan and not just some poser?",
+        "response": "How else am i going to know\nyou're a real fan and not just\nsome poser?",
         "link": "enddatetwo"
       }
     ]
@@ -399,7 +399,7 @@
   {
     "id": "thinicetwo",
     "name": "Stella",
-    "dialog": "I didn't ask you to prove you're a fan so i expect the same respect back.",
+    "dialog": "I didn't ask you to prove you're a fan so i expect\nthe same respect back.",
     "emotion": "Irritated",
     "image": "StellaIrritated",
     "love": -5,
@@ -410,11 +410,11 @@
         "link": "apologyaccepted"
       },
       {
-        "response": "Well, I'm a real fan so i don't have to prove anything.",
+        "response": "Well, I'm a real fan so i don't have\nto prove anything.",
         "link": "enddatetwo"
       },
       {
-        "response": "I read online that there are a lot of metal posers so i just wanted to be sure.",
+        "response": "I read online that there are a lot of\nmetal posers so i just wanted to\nbe sure.",
         "link": "enddatetwo"
       }
     ]
@@ -427,11 +427,11 @@
     "image": "StellaHappy",
     "responses": [
       {
-        "response": "Ofcourse, maybe lets talk about something else. Do you have other hobbies?",
+        "response": "Ofcourse, maybe lets talk about\nsomething else.\nDo you have other hobbies?",
         "link": "otherhobbies"
       },
       {
-        "response": "Right. Lets try this again, what music do you listen to?",
+        "response": "Right. Lets try this again,\nwhat music do you listen to?",
         "link": "stellamusic"
       }
     ]
@@ -439,7 +439,7 @@
   {
     "id": "enddatetwo",
     "name": "Stella",
-    "dialog": "Dude, just get the fuck out. This isn't  going to work (date ends)",
+    "dialog": "Dude, just get the fuck out.\nThis isn't  going to work (date ends)",
     "emotion": "Angry",
     "image": "StellaAngry",
     "love": -50,
@@ -474,16 +474,16 @@
   {
     "id": "otherbands",
     "name": "Stella",
-    "dialog": "My favourite band is Steelica. My parents always played it so i kind of grew up on it. From there i discovered other bands i like. ",
+    "dialog": "My favourite band is Steelica. My parents always\nplayed it so i kind of grew up on it. From there i discovered other bands i like. ",
     "emotion": "happy",
     "image": "StellaHappy",
     "responses": [
       {
-        "response": "Steelica is pretty good. What are the other bands you like?",
+        "response": "Steelica is pretty good.\nWhat are the other bands you like?",
         "link": "otherbands"
       },
       {
-        "response": "My favourite band is also Steelica. I'm kind of jealous my parents aren't into it so much sadly.",
+        "response": "My favourite band is also Steelica.\nI'm kind of jealous my parents aren't into it so much sadly.",
         "link": "favoriteband"
       },
       {
