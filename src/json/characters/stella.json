@@ -12,7 +12,7 @@
       },
       {
         "response": "Wow! You look... interesting?",
-        "link": "negitive"
+        "link": "negative"
       },
       {
         "response": "Hey, nice outfit! My name's {player}.",
@@ -113,7 +113,7 @@
     "image": "StellaHappy",
     "responses": [
       {
-        "response": "I like going to the gym and playing games with friends",
+        "response": "I like going to the gym and\nplaying games with friends",
         "link": "games"
       },
       {
@@ -121,7 +121,7 @@
         "link": "games"
       },
       {
-        "response": "I'm usually listening to music. I like to go to concert, local and bigger ones",
+        "response": "I'm usually listening to music.\nI like to go to concert,\nlocal and bigger ones",
         "link": "music"
       }
     ]
@@ -129,7 +129,7 @@
   {
     "id": "games",
     "name": "Stella",
-    "dialog": "We should play together sometimes! I'm not that good, but it's about having fun. I'm more of a music person myself.",
+    "dialog": "We should play together sometimes!\nI'm not that good, but it's about having fun.\nI'm more of a music person myself.",
     "emotion": "Happy",
     "image": "StellaHappy",
     "friendship": 15,
@@ -140,7 +140,7 @@
         "link": "stellamusic"
       },
       {
-        "response": "I'm not so sure, i don't like playing with noobs. I like to keep my score up.",
+        "response": "I'm not so sure, I don't like playing\nwith noobs.I like to keep my score up.",
         "link": "noobs"
       },
       {

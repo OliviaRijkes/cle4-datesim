@@ -172,7 +172,7 @@
     "image": "OnyxHappy",
     "responses": [
       {
-        "response": "We’ll see.",
+        "response": "We’ll see..",
         "link": "cheeky"
       },
       {
@@ -184,34 +184,30 @@
   {
     "id": "cheeky",
     "name": "Onyx",
-    "dialog": "...",
-    "emotion": "Happy",
-    "image": "OnyxHappy",
+    "dialog": "Oh yea? I'll show you!",
+    "emotion": "Playful",
+    "image": "OnyxPlayful",
+    "love": 20,
+    "friendship": 10,
     "responses": [
       {
-        "response": "We’ll see.",
-        "link": "cheeky"
-      },
-      {
-        "response": "Don’t worry. It’s not your fault if things don’t work out.",
-        "link": "sweet"
+        "response": "Hehe okay",
+        "link": "genderfluid"
       }
     ]
   },
   {
     "id": "sweet",
     "name": "Onyx",
-    "dialog": "...",
+    "dialog": "Thank you, the same goes for me",
     "emotion": "Happy",
     "image": "OnyxHappy",
+    "friendship": 20,
+    "love": 10,
     "responses": [
       {
-        "response": "We’ll see.",
-        "link": "cheeky"
-      },
-      {
-        "response": "Don’t worry. It’s not your fault if things don’t work out.",
-        "link": "sweet"
+        "response": "...",
+        "link": "genderfluid"
       }
     ]
   },
@@ -267,8 +263,8 @@
     "id": "complicated",
     "name": "Onyx",
     "dialog": "Oh okay, yea, love can be complicated at times.",
-    "emotion": "Happy",
-    "image": "OnyxHappy",
+    "emotion": "Awkward",
+    "image": "OnyxAwkward",
     "friendship": 10,
     "love": 5,
     "responses": [
@@ -323,7 +319,7 @@
   {
     "id": "pronouns",
     "name": "Onyx",
-    "dialog": "It changes based on whether I feel more masculine or feminine, right now I feel more masculine.",
+    "dialog": "It changes based on whether I feel more masculine or feminine,\nright now I feel more masculine.",
     "emotion": "Happy",
     "image": "OnyxHappy",
     "friendship": 10,
@@ -349,7 +345,7 @@
   {
     "id": "pronouns3",
     "name": "Onyx",
-    "dialog": " But when you don't know how I'm feeling at the moment or if it is too complicated for you, you can just use anything.",
+    "dialog": " But when you don't know how I'm feeling at the moment \nor if it is too complicated for you, \nyou can just use anything.",
     "emotion": "Happy",
     "image": "OnyxHappy",
     "responses": [
@@ -366,7 +362,7 @@
   {
     "id": "yay",
     "name": "Onyx",
-    "dialog": "...",
+    "dialog": "Thanks",
     "emotion": "Happy",
     "image": "OnyxHappy",
     "friendship": 5,
@@ -381,8 +377,8 @@
     "id": "oh",
     "name": "Onyx",
     "dialog": "Oh okay.",
-    "emotion": "Awkward",
-    "image": "OnyxAwkward",
+    "emotion": "Sad",
+    "image": "OnyxSad",
     "love": -10,
     "responses": [
       {

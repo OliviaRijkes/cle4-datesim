@@ -8,16 +8,18 @@ const Resources = {
     WillowConfused: new ImageSource('images/willowConfused.png'),
     WillowFlustered: new ImageSource('images/willowFlustered.png'),
     WillowNeutral: new ImageSource('images/willowNeutral.png'),
-    OnyxHappy: new ImageSource('images/onyx.png'),
-    OnyxAwkward: new ImageSource('images/onyx.png'),
-    OnyxAnnoyed: new ImageSource('images/onyx.png'),
-    OnyxAngry: new ImageSource('images/onyx.png'),
+    OnyxHappy: new ImageSource('images/onyxHappy.png'),
+    OnyxAnnoyed: new ImageSource('images/onyxAnnoyed.png'),
+    OnyxAngry: new ImageSource('images/onyxAngry.png'),
+    OnyxAwkward: new ImageSource('images/onyxAwkward.png'),
+    OnyxPlayful: new ImageSource('images/onyxPlayful.png'),
+    OnyxSad: new ImageSource('images/onyxSad.png'),
     StellaHappy: new ImageSource('images/Stella.png'),
     StellaExcited: new ImageSource('images/StellaExcited.png'),
     StellaIrritated: new ImageSource('images/StellaIrritated.png'),
     StellaAngry: new ImageSource('images/StellaAngry.png'),
     StellaFlirty: new ImageSource('images/Stella.png'),
-    Font: new FontSource('images/Merriweather-VariableFont_opsz,wdth,wght.ttf', 'StandertFont'),
+    Font: new FontSource('images/Merriweather-VariableFont_opsz,wdth,wght.ttf', 'StandardFont'),
 }
 
 

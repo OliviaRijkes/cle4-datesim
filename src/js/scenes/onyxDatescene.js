@@ -108,7 +108,7 @@ export class OnyxDatescene extends Scene {
         const sprite = Resources[imageName].toSprite();
 
         // you might need to change this again for each character
-        sprite.scale = new Vector(0.35, 0.35);
+        sprite.scale = new Vector(1, 1);
 
         this.dateCharacter.graphics.use(sprite);
     }
