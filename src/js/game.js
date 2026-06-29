@@ -18,13 +18,6 @@ export class Game extends Engine {
         this.start(ResourceLoader).then(() => this.startGame())
     }
 
-    // startGame() {
-    //     console.log("start de game!")
-    //     //load scenes to switch
-    //     this.addScene("date", new Datescene())
-    //     this.goToScene("date")
-    // }
-
     startGame() {
         console.log("start de game!")
         //load scenes to switch
