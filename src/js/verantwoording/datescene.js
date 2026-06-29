@@ -1,6 +1,6 @@
 import {Keys, Scene, Vector} from "excalibur";
 import {Dateui} from "./dateui.js";
-import {Character} from "../characters/character.js";
+import {Character} from "./character.js";
 import {Choiceui} from "./choiceui.js";
 
 export class Datescene extends Scene {

@@ -12,7 +12,7 @@ export class ChoiceUI extends ScreenElement {
     onInitialize(engine) {
         //friendshipbar and lovebar
         let lovebarBackground = new Actor({
-            x: 1050,
+            x: 130,
             y: 40,
             color: Color.fromRGB(255, 255, 255, 0.4),
             width: 200,
@@ -21,14 +21,14 @@ export class ChoiceUI extends ScreenElement {
         })
         this.addChild(lovebarBackground);
 
-        this.lovebar = new Actor({x: 1050, y: 40, color: Color.Pink, width: 200, height: 20, anchor: Vector.Zero})
+        this.lovebar = new Actor({x: 130, y: 40, color: Color.Pink, width: 200, height: 20, anchor: Vector.Zero})
         this.addChild(this.lovebar);
         this.lovebar.scale = new Vector(0, 1);
         this.currentLove = 0;
         this.maxLove = 100;
 
         let friendshipbarBackground = new Actor({
-            x: 1050,
+            x: 130,
             y: 90,
             color: Color.fromRGB(255, 255, 255, 0.4),
             width: 200,
@@ -38,7 +38,7 @@ export class ChoiceUI extends ScreenElement {
         this.addChild(friendshipbarBackground);
 
         this.friendshipbar = new Actor({
-            x: 1050,
+            x: 130,
             y: 90,
             color: Color.Green,
             width: 200,

@@ -33,9 +33,9 @@ export class Game extends Engine {
         this.addScene("dateStella", new StellaDatescene())
         this.addScene("dateEzra", new EzraDatescene())
         // this.goToScene("dateWillow")
-        // this.goToScene("dateOnyx")
+        this.goToScene("dateOnyx")
         // this.goToScene("dateStella")
-        this.goToScene("dateEzra")
+        // this.goToScene("dateEzra")
 
     }
 }
