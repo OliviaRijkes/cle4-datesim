@@ -2,6 +2,7 @@ import '../css/style.css'
 import {Actor, Engine, Vector, DisplayMode} from "excalibur"
 import {Resources, ResourceLoader} from './resources.js'
 import {Datescene} from './scenes/datescene.js'
+import { Selectionscene } from './scenes/selectionscene.js'
 
 // import {WillowDatescene} from "./scenes/willowDatescene.js";
 
@@ -20,8 +21,9 @@ export class Game extends Engine {
     startGame() {
         console.log("start de game!")
         //load scenes to switch
+        this.addScene("selection", new Selectionscene())
         this.addScene("date", new Datescene())
-        this.goToScene("date")
+        this.goToScene("selection")
     }
 
     // startGame() {
