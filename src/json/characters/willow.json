@@ -205,7 +205,7 @@
       },
       {
         "response": "I like sports.",
-        "link": "which"
+        "link": "which sport"
       },
       {
         "response": "I like gaming.",
@@ -250,7 +250,7 @@
         "link": "when"
       },
       {
-        "response": "I rather go alone to be honest",
+        "response": "I'd rather go alone to be honest",
         "link": "disappointing"
       },
       {
@@ -260,6 +260,29 @@
       {
         "response": "Yeah, if we decide we\nwant to see each other again",
         "link": "exactly"
+      }
+    ]
+  },
+  {
+    "id": "which sport",
+    "name": "willow",
+    "dialog": "Ooh, which sport?",
+    "emotion": "Happy",
+    "image": "WillowHappy",
+    "friendship": 5,
+    "love": 5,
+    "responses": [
+      {
+        "response": "",
+        "link": ""
+      },
+      {
+        "response": "",
+        "link": ""
+      },
+      {
+        "response": "",
+        "link": ""
       }
     ]
   }

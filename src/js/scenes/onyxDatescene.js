@@ -27,14 +27,6 @@ export class OnyxDatescene extends Scene {
         // The character needs to start with an image (corresponding to emotion)
         this.changeEmotion(this.branch.image);
 
-        // (for later)
-        // this.dialogHistory = [];
-
-        // Save the characters name and their dialog in the dialog history (for later)
-        // this.dialogHistory.push(
-        //     `${this.branch.name}: ${this.branch.dialog}`
-        // );
-
         this.ui = new DateUI();
         this.choices = new ChoiceUI();
 
@@ -83,11 +75,6 @@ export class OnyxDatescene extends Scene {
 
         this.branch = this.findBranch(branchId);
 
-        // for later
-        // this.dialogHistory.push(
-        //     `${this.branch.name}: ${this.branch.dialog}`
-        // );
-
         // When branch is changed, the emotion can too
         this.changeEmotion(this.branch.image);
 
@@ -120,11 +107,6 @@ export class OnyxDatescene extends Scene {
     }
 
     selectResponse(responseData) {
-
-        // Save player (name) and responses in dialog history (if we want to add that later)
-        // this.dialogHistory.push(
-        //     `Player: ${responseData.response}`
-        // );
 
         // Change branch based on which link is in the json (in responses)
         this.changeBranch(responseData.link);
