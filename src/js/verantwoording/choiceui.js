@@ -1,10 +1,10 @@
-import {Color, FontUnit, Label, ScreenElement, Vector} from "excalibur";
+import {Actor, Color, FontUnit, Label, ScreenElement, Vector} from "excalibur";
 import {Resources} from "../resources.js";
 
-export class Choiceui extends ScreenElement{
-    onInitialize(engine){
+export class Choiceui extends ScreenElement {
+    onInitialize(engine) {
         //needs the branch it ended at to load the choices
-        console.log(this.scene.dateCharacter.choices,this.scene.branchName)
+        console.log(this.scene.dateCharacter.choices, this.scene.branchName)
         const choices = this.scene.dateCharacter.choices[this.scene.branchName]
 
         // loops through all choices and makes a label with the 1st text
@@ -25,6 +25,7 @@ export class Choiceui extends ScreenElement{
             this.addChild(choiceLabel)
         }
     }
+
     choiceClick(i) {
         //resets the dialogIndex
         this.scene.dialogIndex = 0
@@ -41,6 +42,5 @@ export class Choiceui extends ScreenElement{
 
         //remove choiceLabels
         this.kill()
-
     }
 }

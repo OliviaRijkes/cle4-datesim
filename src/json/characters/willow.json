@@ -4,18 +4,18 @@
     "name": "willow",
     "dialog": "Hi! I'm Willow, nice to meet you.",
     "emotion": "Happy",
-    "image": "willow-happy.png",
+    "image": "WillowHappy",
     "responses": [
       {
-        "response": "Hello, I'm {Player},nice to meet you too.",
+        "response": "Hello, I'm {Player},\nnice to meet you too.",
         "link": "normal"
       },
       {
-        "response": "That's a cute name. I'm {Player}, nice to meet you too.",
+        "response": "That's a cute name. I'm {Player},\nnice to meet you too.",
         "link": "compliment"
       },
       {
-        "response": "HAIII! I’m {Player}!,Nice to meet you too!!",
+        "response": "HAIII! I’m {Player}!,\nNice to meet you too!!",
         "link": "energetic"
       }
     ]
@@ -25,19 +25,8 @@
     "name": "willow",
     "dialog": "...",
     "emotion": "Happy",
-    "image": "willow-happy.png",
-    "responses": [
-      {
-        "link": "pronouns"
-      }
-    ]
-  },
-  {
-    "id": "energetic",
-    "name": "willow",
-    "dialog": "Oh, thank you. I like yours too",
-    "emotion": "Flustered",
-    "image": "willow-flustered.png",
+    "image": "WillowHappy",
+    "friendship": 15,
     "responses": [
       {
         "link": "pronouns"
@@ -47,9 +36,24 @@
   {
     "id": "compliment",
     "name": "willow",
+    "dialog": "Oh, thank you. I like yours too",
+    "emotion": "Flustered",
+    "image": "WillowFlustered",
+    "friendship": 10,
+    "love": 20,
+    "responses": [
+      {
+        "link": "pronouns"
+      }
+    ]
+  },
+  {
+    "id": "energetic",
+    "name": "willow",
     "dialog": "...",
     "emotion": "Confused",
-    "image": "willow-confused.png",
+    "image": "WillowConfused",
+    "friendship": 10,
     "responses": [
       {
         "link": "pronouns"
@@ -59,12 +63,12 @@
   {
     "id": "pronouns",
     "name": "willow",
-    "dialog": "I'm non-binary by the way, my pronouns are they/them.",
+    "dialog": "I'm non-binary by the way,\nmy pronouns are they/them.",
     "emotion": "Happy",
-    "image": "willow-happy.png",
+    "image": "WillowHappy",
     "responses": [
       {
-        "response": "Okay, I’ll keep that in mind, I go by {Pronouns}.",
+        "response": "Okay, I’ll keep that in mind,\n I go by {Pronouns}.",
         "link": "understanding"
       },
       {
@@ -72,7 +76,7 @@
         "link": "meaning"
       },
       {
-        "response": "Oh, so you're one of those people...",
+        "response": "Oh, so you're one of\n*those* people...",
         "link": "cruel"
       }
     ]
@@ -82,10 +86,12 @@
     "name": "willow",
     "dialog": "Thanks, I will too",
     "emotion": "Happy",
-    "image": "willow-happy.png",
+    "image": "WillowHappy",
+    "love": 15,
+    "friendship": 15,
     "responses": [
       {
-        "link": "next"
+        "link": "hobbies"
       }
     ]
   },
@@ -94,18 +100,18 @@
     "name": "willow",
     "dialog": "It means I’m neither male nor female.",
     "emotion": "Happy",
-    "image": "willow-happy.png",
+    "image": "WillowHappy",
     "responses": [
       {
-        "response": "okay, I think i get it now, I'll keep that in mind",
-        "link": "next"
+        "response": "okay, I think i get it now,\nI'll keep that in mind",
+        "link": "understanding"
       },
       {
         "response": "I still don't get it completely",
         "link": "meaning2"
       },
       {
-        "response": "Oh, so you're one of those people...",
+        "response": "Oh, so you're one of\n*those* people...",
         "link": "cruel"
       }
     ]
@@ -115,14 +121,16 @@
     "name": "willow",
     "dialog": "What is that supposed to mean?",
     "emotion": "Angry",
-    "image": "willow-angry.png",
+    "image": "WillowAngry",
+    "friendship": -20,
+    "love": -20,
     "responses": [
       {
-        "response": "I didn't mean it in a bad way. You're just unique",
+        "response": "I didn't mean it in a bad way.\nYou're just unique",
         "link": "fix"
       },
       {
-        "response": "One of those people that can't just be *normal*",
+        "response": "One of those people\nthat can't just be *normal*",
         "link": "ruined"
       }
     ]
@@ -130,13 +138,13 @@
   {
     "id": "meaning2",
     "name": "willow",
-    "dialog": "Oh, don't worry, I'll try to explain it better. (I need to write an explanation)",
+    "dialog": "Oh, don't worry, I'll try to explain it better.\nNon-binary means I have no gender\nand they/them is what I use instead of he or she.",
     "emotion": "Happy",
-    "image": "willow-happy.png",
+    "image": "WillowHappy",
     "responses": [
       {
-        "response": "okay, I think i get it now, I'll keep that in mind",
-        "link": "next"
+        "response": "okay, I think i get it now,\nI'll keep that in mind",
+        "link": "understanding"
       }
     ]
   },
@@ -144,23 +152,114 @@
     "id": "fix",
     "name": "willow",
     "dialog": "Please don't call it that, but I'll let it slide for now..",
-    "emotion": "Happy",
-    "image": "willow-happy.png",
+    "emotion": "Neutral",
+    "image": "WillowNeutral",
+    "friendship": 10,
+    "love": 5,
     "responses": [
       {
-        "link": "next"
+        "link": "hobbies"
       }
     ]
   },
   {
     "id": "ruined",
     "name": "willow",
-    "dialog": "There's nothing wrong with being non-binary. You're the weird one for treating me like that. I'll take my leave now, you're clearly not what I'm looking for.",
+    "dialog": "There's nothing wrong with being non-binary.\nYou're the weird one for treating me like that.",
     "emotion": "Angry",
-    "image": "willow-angry.png",
+    "image": "WillowAngry",
+    "friendship": -20,
+    "love": -20,
     "responses": [
       {
-        "link": "dateEnds"
+        "link": "date ends badly"
+      }
+    ]
+  },
+  {
+    "id": "date ends badly",
+    "name": "willow",
+    "dialog": "I'll take my leave now,\nyou're clearly not what I'm looking for.",
+    "emotion": "Angry",
+    "image": "WillowAngry",
+    "responses": [
+      {
+        "link": "homepage?"
+      }
+    ]
+  },
+  {
+    "id": "hobbies",
+    "name": "willow",
+    "dialog": "Anyway, let’s get to know each other better.\nWhat are your hobbies?",
+    "emotion": "Happy",
+    "image": "WillowHappy",
+    "responses": [
+      {
+        "response": "I don’t have any.",
+        "link": "free time"
+      },
+      {
+        "response": "I love hiking!",
+        "link": "same"
+      },
+      {
+        "response": "I like sports.",
+        "link": "which"
+      },
+      {
+        "response": "I like gaming.",
+        "link": "together"
+      }
+    ]
+  },
+  {
+    "id": "free time",
+    "name": "willow",
+    "dialog": "Oh, then is there anything else\nyou like to do in your free time?",
+    "emotion": "Neutral",
+    "image": "WillowNeutral",
+    "friendship": -5,
+    "love": -10,
+    "responses": [
+      {
+        "response": "Yes! I love going on dates.",
+        "link": "intention"
+      },
+      {
+        "response": "Not really",
+        "link": "uninteresting"
+      },
+      {
+        "response": "Yes, lots of stuff",
+        "link": "what stuff"
+      }
+    ]
+  },
+  {
+    "id": "same",
+    "name": "willow",
+    "dialog": "Wow really? That's one of my hobbies too!\nMaybe we can hike together sometime.",
+    "emotion": "Happy",
+    "image": "WillowHappy",
+    "friendship": 15,
+    "love": 15,
+    "responses": [
+      {
+        "response": "I'd love to!",
+        "link": "when"
+      },
+      {
+        "response": "I rather go alone to be honest",
+        "link": "disappointing"
+      },
+      {
+        "response": "No, I lied",
+        "link": "why"
+      },
+      {
+        "response": "Yeah, if we decide we\nwant to see each other again",
+        "link": "exactly"
       }
     ]
   }

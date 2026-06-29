@@ -1,17 +1,17 @@
 import {Actor, Color, Keys, Scene, Vector} from "excalibur";
 import {DateUI} from "../ui/dateUI.js";
-import willowData from "../../json/characters/willow.json";
+import onyxData from "../../json/characters/onyx.json";
 import {Resources} from "../resources.js";
 import {ChoiceUI} from "../ui/choiceUI.js";
 import {Background} from "../ui/background.js";
 
-export class WillowDatescene extends Scene {
+export class OnyxDatescene extends Scene {
 
     onInitialize(engine) {
         console.log('dateScene start')
 
         // Now you only have to change where the dialogData comes from for each character, not replace dialogData everywhere
-        this.dialogData = willowData;
+        this.dialogData = onyxData;
 
         // Start in branch: begin
         this.currentBranchId = "begin";
@@ -114,7 +114,7 @@ export class WillowDatescene extends Scene {
         const sprite = Resources[imageName].toSprite();
 
         // you might need to change this again for each character
-        sprite.scale = new Vector(0.4, 0.4);
+        sprite.scale = new Vector(1, 1);
 
         this.dateCharacter.graphics.use(sprite);
     }

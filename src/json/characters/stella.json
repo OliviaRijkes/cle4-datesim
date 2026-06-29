@@ -1,0 +1,495 @@
+[
+  {
+    "id": "begin",
+    "name": "Stella",
+    "dialog": "Hey, I'm Stella nice to meet you!",
+    "emotion": "Happy",
+    "image": "StellaHappy",
+    "responses": [
+      {
+        "response": "Hi, my name's {player}",
+        "link": "normal"
+      },
+      {
+        "response": "Wow! You look... interesting?",
+        "link": "negative"
+      },
+      {
+        "response": "Hey, nice outfit! My name's {player}.",
+        "link": "compliment"
+      }
+    ]
+  },
+  {
+    "id": "normal",
+    "name": "Stella",
+    "dialog": "So tell me about yourself?",
+    "emotion": "Happy",
+    "image": "StellaHappy",
+    "friendship": 10,
+    "responses": [
+      {
+        "link": "hobbies"
+      }
+    ]
+  },
+  {
+    "id": "negative",
+    "name": "Stella",
+    "dialog": "I hope for you that wasn't judgmental.",
+    "emotion": "irritated",
+    "image": "StellaIrritated",
+    "friendship": -5,
+    "love": -5,
+    "responses": [
+      {
+        "response": "Nah you just look a little freaky, like those goth mommies.",
+        "link": "endDate"
+      },
+      {
+        "response": "Sorry, i just didn't expect the whole look.",
+        "link": "thinIce"
+      },
+      {
+        "response": "No no no! I was just impressed. You look really good. I was like wow, didn't expect that.",
+        "link": "apology"
+      }
+    ]
+  },
+  {
+    "id": "compliment",
+    "name": "Stella",
+    "dialog": "I like that name! So tell me about yourself?",
+    "emotion": "Happy",
+    "image": "StellaHappy",
+    "friendship": 20,
+    "love": 10,
+    "responses": [
+      {
+        "link": "hobbies"
+      }
+    ]
+  },
+  {
+    "id": "endDate",
+    "name": "Stella",
+    "dialog": "I'm not here to please your fetish! bye. (Date ends)",
+    "emotion": "Angry",
+    "image": "StellaAngry",
+    "friendship": -50,
+    "love": -50,
+    "responses": [
+      {
+        "link": "homepage?"
+      }
+    ]
+  },
+  {
+    "id": "thinIce",
+    "name": "Stella",
+    "dialog": "...",
+    "emotion": "irritated",
+    "image": "StellaIrritated",
+    "friendship": 5,
+    "responses": [
+      {
+        "link": "hobbies"
+      }
+    ]
+  },
+  {
+    "id": "apology",
+    "name": "Stella",
+    "dialog": "...",
+    "emotion": "Happy",
+    "image": "StellaHappy",
+    "love": 5,
+    "responses": [
+      {
+        "link": "hobbies"
+      }
+    ]
+  },
+  {
+    "id": "hobbies",
+    "name": "Stella",
+    "dialog": "...",
+    "emotion": "Happy",
+    "image": "StellaHappy",
+    "responses": [
+      {
+        "response": "I like going to the gym and\nplaying games with friends",
+        "link": "games"
+      },
+      {
+        "response": "I like games and such",
+        "link": "games"
+      },
+      {
+        "response": "I'm usually listening to music.\nI like to go to concerts,\nlocal and bigger ones",
+        "link": "music"
+      }
+    ]
+  },
+  {
+    "id": "games",
+    "name": "Stella",
+    "dialog": "We should play together sometimes!\nI'm not that good, but it's about having fun.\nI'm more of a music person myself.",
+    "emotion": "Happy",
+    "image": "StellaHappy",
+    "friendship": 15,
+    "love": 10,
+    "responses": [
+      {
+        "response": "What music do you listen to?",
+        "link": "stellamusic"
+      },
+      {
+        "response": "I'm not so sure, I don't like playing\nwith noobs.I like to keep my score up.",
+        "link": "noobs"
+      },
+      {
+        "response": "I'd love to play games with you!",
+        "link": "playgames"
+      }
+    ]
+  },
+  {
+    "id": "noobs",
+    "name": "Stella",
+    "dialog": "So you care more about your score than having fun with a friend? ",
+    "emotion": "irritated",
+    "image": "StellaIrritated",
+    "friendship": -25,
+    "love": -20,
+    "responses": [
+      {
+        "response": "I play competitive games that's just how it works",
+        "link": "competitivegames"
+      },
+      {
+        "response": "Didn't want to make it sound like that, we can play non compatible if you want?",
+        "link": "playgames"
+      }
+    ]
+  },
+  {
+    "id": "competitivegames",
+    "name": "Stella",
+    "dialog": "If you say so...",
+    "emotion": "irritated",
+    "image": "StellaIrritated",
+    "friendship": -15,
+    "love": -15,
+    "responses": [
+      {
+        "response": "You said you liked music? what do you listen to?",
+        "link": "stellamusic"
+      },
+      {
+        "response": "I mean we could play Ourcraft, if you'd like that",
+        "link": "ourcraft"
+      }
+    ]
+  },
+  {
+    "id": "playgames",
+    "name": "Stella",
+    "dialog": "That sounds good what game are you thinking of?",
+    "emotion": "Happy",
+    "image": "StellaHappy",
+    "friendship": 10,
+    "love": 10,
+    "responses": [
+      {
+        "response": "What about Amongourselves?",
+        "link": "amongus"
+      },
+      {
+        "response": "We could play Ourcracft together.",
+        "link": "ourcraft"
+      }
+    ]
+  },
+  {
+    "id": "amongus",
+    "name": "Stella",
+    "dialog": "Amongourselves is very fun! but i must warn you i'm a very good intruder.",
+    "emotion": "Happy",
+    "image": "StellaHappy",
+    "friendship": 15,
+    "love": 10,
+    "responses": [
+      {
+        "response": "That will be an easy win for you, I suck at the game",
+        "link": "bad"
+      },
+      {
+        "response": "Carefull, I'm really good at spotting the intruders.",
+        "link": "good"
+      }
+    ]
+  },
+  {
+    "id": "ourcraft",
+    "name": "Stella",
+    "dialog": "Sounds fun. I quite like those designing minigames, I'm pretty good at designing.",
+    "emotion": "Happy",
+    "image": "StellaHappy",
+    "friendship": 10,
+    "love": 15,
+    "responses": [
+      {
+        "response": "You would have to help me out then I suck at designing",
+        "link": "bad"
+      },
+      {
+        "response": "I'm also a bit of a designer myself, we could be a perfect teamup.",
+        "link": "good"
+      }
+    ]
+  },
+  {
+    "id": "good",
+    "name": "Stella",
+    "dialog": "Sounds like a fun challenge! I will send you my username when i get home.",
+    "emotion": "Happy",
+    "image": "StellaHappy",
+    "friendship": 5,
+    "love": 5,
+    "responses": [
+      {
+        "response": "I will too! You mentioned you liked music, what do you listen to?",
+        "link": "stellamusic"
+      }
+    ]
+  },
+  {
+    "id": "bad",
+    "name": "Stella",
+    "dialog": "That's okey, not everyone can be as good as a gamer as me~",
+    "emotion": "Excited",
+    "image": "StellaExcited",
+    "friendship": 5,
+    "love": 10,
+    "responses": [
+      {
+        "response": "yeah sure... but you mentioned you liked music, what do you listen to?",
+        "link": "stellamusic"
+      }
+    ]
+  },
+  {
+    "id": "music",
+    "name": "Stella",
+    "dialog": "Oh shit! I love music. What do you listen to",
+    "emotion": "Excited",
+    "image": "StellaExcited",
+    "friendship": 10,
+    "love": 15,
+    "responses": [
+      {
+        "response": "I'm into Linkin Forrest, Radiohand, System of a up. Rock and Metal type of bands",
+        "link": "alternative"
+      },
+      {
+        "response": "Oh, i like Good bunny, Tyler the destroyer, Snoop cat. Those kind of artist.",
+        "link": "hiphop"
+      },
+      {
+        "response": "I really like Babba! and Stayteens, Warmplay, Mr goegoe and occasionally Tailor Fast.",
+        "link": "pop"
+      }
+    ]
+  },
+  {
+    "id": "alternative",
+    "name": "Stella",
+    "dialog": "Nice! I also like those bands. I recommend giving A poor mans drink a listen if you haven't they're really good!",
+    "emotion": "Excited",
+    "image": "StellaExcited",
+    "love": 15,
+    "responses": [
+      {
+        "response": "Alright name me five song then.",
+        "link": "poser"
+      },
+      {
+        "response": "Enough about music, what other hobbies do you have?",
+        "link": "otherhobbies"
+      },
+      {
+        "response": "I will thanks! What do you listen to?",
+        "link": "stellamusic"
+      },
+      {
+        "response": "I know them they are amazing! What do you listen to?",
+        "link": "stellamusic"
+      }
+    ]
+  },
+  {
+    "id": "hiphop",
+    "name": "Stella",
+    "dialog": "Not really my shit, but you do you. ",
+    "emotion": "happy",
+    "image": "StellaHappy",
+    "friendship": 10,
+    "responses": [
+      {
+        "response": "That's fine, what do you like to listen to?",
+        "link": "stellamusic"
+      },
+      {
+        "response": "You should give skittles a try tho, but do you have other hobbies?",
+        "link": "otherhobbies"
+      },
+      {
+        "response": "You must listen to that heavy shit right with the screams?",
+        "link": "unconfortablemusic"
+      }
+    ]
+  },
+  {
+    "id": "pop",
+    "name": "Stella",
+    "dialog": "I secretly listen to Gabba from time to time, they're really fun.",
+    "emotion": "happy",
+    "image": "StellaHappy",
+    "love": 10,
+    "friendship": 15,
+    "responses": [
+      {
+        "response": "I'd expect you'd listen to those weird screamo or emo songs",
+        "link": "uncomfortable music"
+      },
+      {
+        "response": "Oh didn't expect that! What do you normally listen to?",
+        "link": "stellamusic"
+      },
+      {
+        "response": "No reason to feel shame about listing to a good artist. Do you have other hobbies?",
+        "link": "otherhobbies"
+      }
+    ]
+  },
+  {
+    "id": "poser",
+    "name": "Stella",
+    "dialog": "Why should I have to prove to YOU that I'm a fan of a band I recommended.",
+    "emotion": "Irritated",
+    "image": "StellaIrritated",
+    "love": -20,
+    "friendship": -10,
+    "responses": [
+      {
+        "response": "Just wanted to test your knowledge that's all",
+        "link": "thinicetwo"
+      },
+      {
+        "response": "Sorry didn't know you were going to react like that.",
+        "link": "thinicetwo"
+      },
+      {
+        "response": "How else am i going to know you're a real fan and not just some poser?",
+        "link": "enddatetwo"
+      }
+    ]
+  },
+  {
+    "id": "thinicetwo",
+    "name": "Stella",
+    "dialog": "I didn't ask you to prove you're a fan so i expect the same respect back.",
+    "emotion": "Irritated",
+    "image": "StellaIrritated",
+    "love": -5,
+    "friendship": -5,
+    "responses": [
+      {
+        "response": "true, i'm sorry for acting like that.",
+        "link": "apologyaccepted"
+      },
+      {
+        "response": "Well, I'm a real fan so i don't have to prove anything.",
+        "link": "enddatetwo"
+      },
+      {
+        "response": "I read online that there are a lot of metal posers so i just wanted to be sure.",
+        "link": "enddatetwo"
+      }
+    ]
+  },
+  {
+    "id": "apologyaccepted",
+    "name": "Stella",
+    "dialog": "Apology accepted, but don't let it happen again",
+    "emotion": "happy",
+    "image": "StellaHappy",
+    "responses": [
+      {
+        "response": "Ofcourse, maybe lets talk about something else. Do you have other hobbies?",
+        "link": "otherhobbies"
+      },
+      {
+        "response": "Right. Lets try this again, what music do you listen to?",
+        "link": "stellamusic"
+      }
+    ]
+  },
+  {
+    "id": "enddatetwo",
+    "name": "Stella",
+    "dialog": "Dude, just get the fuck out. This isn't  going to work (date ends)",
+    "emotion": "Angry",
+    "image": "StellaAngry",
+    "love": -50,
+    "friendship": -50,
+    "responses": [
+      {
+        "link": "homepage?"
+      }
+    ]
+  },
+  {
+    "id": "stellamusic",
+    "name": "Stella",
+    "dialog": "My favourite band is Steelica. My parents always played it so i kind of grew up on it. From there i discovered other bands i like. ",
+    "emotion": "happy",
+    "image": "StellaHappy",
+    "responses": [
+      {
+        "response": "Steelica is pretty good. What are the other bands you like?",
+        "link": "otherbands"
+      },
+      {
+        "response": "My favourite band is also Steelica. I'm kind of jealous my parents aren't into it so much sadly.",
+        "link": "favoriteband"
+      },
+      {
+        "response": "What's steelica",
+        "link": "what"
+      }
+    ]
+  },
+  {
+    "id": "otherbands",
+    "name": "Stella",
+    "dialog": "My favourite band is Steelica. My parents always played it so i kind of grew up on it. From there i discovered other bands i like. ",
+    "emotion": "happy",
+    "image": "StellaHappy",
+    "responses": [
+      {
+        "response": "Steelica is pretty good. What are the other bands you like?",
+        "link": "otherbands"
+      },
+      {
+        "response": "My favourite band is also Steelica. I'm kind of jealous my parents aren't into it so much sadly.",
+        "link": "favoriteband"
+      },
+      {
+        "response": "What's steelica",
+        "link": "what"
+      }
+    ]
+  }
+]

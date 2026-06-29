@@ -1,5 +1,5 @@
-import { Color, Font, FontUnit, Keys, Label, Rectangle, ScreenElement, Vector } from "excalibur";
-import { Resources } from "../resources.js";
+import {Actor, Color, Font, FontUnit, Keys, Label, Rectangle, ScreenElement, Vector} from "excalibur";
+import {Resources} from "../resources.js";
 
 
 export class Dateui extends ScreenElement {
@@ -19,20 +19,20 @@ export class Dateui extends ScreenElement {
         //init write: uses branch,dialogIndex
         this.loadText();
         // this.loadChoices()
-
-        //lovemeter
     }
+
     loadText() {
         this.mainTextLabel.text = this.scene.branch[this.scene.dialogIndex]
     }
+
     loadChoices() {
         //needs the branch it ended at to load the choices
-        console.log(this.scene.dateCharacter.choices,this.scene.branchName)
+        console.log(this.scene.dateCharacter.choices, this.scene.branchName)
         const choices = this.scene.dateCharacter.choices[this.scene.branchName]
 
         //loops through all choices and makes a label with the 1st text
         for (let i = 0; i < choices.length; i++) {
-           // const choiceLabel = new ChoiceLabel(i, choices[i].text[0])
+            // const choiceLabel = new ChoiceLabel(i, choices[i].text[0])
 
             const choiceLabel = new Label({
                 text: choices[i].text[0],
@@ -49,6 +49,7 @@ export class Dateui extends ScreenElement {
             this.addChild(choiceLabel)
         }
     }
+
     choiceClick(i) {
         //resets the dialogIndex
         this.scene.dialogIndex = 0
@@ -62,8 +63,5 @@ export class Dateui extends ScreenElement {
         //set branch & load
         this.loadText()
         this.scene.translateTextFunction(this.mainTextLabel.text)
-
-        //remove choiceLabels
-
     }
 }

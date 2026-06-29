@@ -3,16 +3,28 @@ import {ImageSource, Sound, Resource, Loader, FontSource} from 'excalibur'
 // voeg hier jouw eigen resources toe
 const Resources = {
     Character1: new ImageSource('images/character1.jpg'),
-    Font: new FontSource('images/Merriweather-VariableFont_opsz,wdth,wght.ttf', 'StandertFont'),
-    SelectionScene: new ImageSource('images/achtergrond speler2 selectionscreen.png'),
-    Bio0: new ImageSource('images/bio0.png'),
-    Bio1: new ImageSource('images/bio1.png'),
-    Bio2: new ImageSource('images/bio2.png'),
-    Selection0: new ImageSource('images/selection0.png'),
-
+    WillowHappy: new ImageSource('images/willowHappy.png'),
+    WillowAngry: new ImageSource('images/willowAngry.png'),
+    WillowConfused: new ImageSource('images/willowConfused.png'),
+    WillowFlustered: new ImageSource('images/willowFlustered.png'),
+    WillowNeutral: new ImageSource('images/willowNeutral.png'),
+    OnyxHappy: new ImageSource('images/onyxHappy.png'),
+    OnyxAnnoyed: new ImageSource('images/onyxAnnoyed.png'),
+    OnyxAngry: new ImageSource('images/onyxAngry.png'),
+    OnyxAwkward: new ImageSource('images/onyxAwkward.png'),
+    OnyxPlayful: new ImageSource('images/onyxPlayful.png'),
+    OnyxSad: new ImageSource('images/onyxSad.png'),
+    StellaHappy: new ImageSource('images/Stella.png'),
+    StellaExcited: new ImageSource('images/StellaExcited.png'),
+    StellaIrritated: new ImageSource('images/StellaIrritated.png'),
+    StellaAngry: new ImageSource('images/StellaAngry.png'),
+    StellaFlirty: new ImageSource('images/Stella.png'),
+    Background: new ImageSource('images/cafe.jpg'),
+    Table: new ImageSource('images/Tafel.png'),
+    Choice: new ImageSource('images/keuzevlakken.png'),
+    Maintext: new ImageSource('images/MainText.png'),
+    Font: new FontSource('images/Merriweather-VariableFont_opsz,wdth,wght.ttf', 'StandardFont'),
 }
-
-
 
 
 const ResourceLoader = new Loader()
@@ -20,4 +32,4 @@ for (let res of Object.values(Resources)) {
     ResourceLoader.addResource(res)
 }
 
-export { Resources, ResourceLoader }
+export {Resources, ResourceLoader}
