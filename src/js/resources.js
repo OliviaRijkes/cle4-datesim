@@ -19,7 +19,7 @@ const Resources = {
     StellaIrritated: new ImageSource('images/Stella.png'),
     StellaAngry: new ImageSource('images/Stella.png'),
     StellaFlirty: new ImageSource('images/Stella.png'),
-    Font: new FontSource('images/Merriweather-VariableFont_opsz,wdth,wght.ttf', 'StandertFont'),
+    Font: new FontSource('images/Merriweather-VariableFont_opsz,wdth,wght.ttf', 'StandardFont'),
 }
 
 
