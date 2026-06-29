@@ -77,7 +77,12 @@
     "emotion": "Angry",
     "image": "StellaAngry",
     "friendship": -50,
-    "love": -50
+    "love": -50,
+    "responses": [
+      {
+        "link": "homepage?"
+      }
+    ]
   },
   {
     "id": "thinIce",
@@ -121,7 +126,7 @@
         "link": "games"
       },
       {
-        "response": "I'm usually listening to music.\nI like to go to concert,\nlocal and bigger ones",
+        "response": "I'm usually listening to music.\nI like to go to concerts,\nlocal and bigger ones",
         "link": "music"
       }
     ]
@@ -159,8 +164,8 @@
     "love": -20,
     "responses": [
       {
-        "response": "I play compatible games that's just how it works",
-        "link": "compatiblegames"
+        "response": "I play competitive games that's just how it works",
+        "link": "competitivegames"
       },
       {
         "response": "Didn't want to make it sound like that, we can play non compatible if you want?",
@@ -169,7 +174,7 @@
     ]
   },
   {
-    "id": "compatiblegames",
+    "id": "competitivegames",
     "name": "Stella",
     "dialog": "If you say so...",
     "emotion": "irritated",
@@ -438,7 +443,12 @@
     "emotion": "Angry",
     "image": "StellaAngry",
     "love": -50,
-    "friendship": -50
+    "friendship": -50,
+    "responses": [
+      {
+        "link": "homepage?"
+      }
+    ]
   },
   {
     "id": "stellamusic",
