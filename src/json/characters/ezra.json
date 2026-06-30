@@ -1,0 +1,23 @@
+[
+  {
+    "id": "begin",
+    "name": "Ezra",
+    "dialog": "Yoo, I'm Ezra, nice to meet you!",
+    "emotion": "Happy",
+    "image": "EzraHappy",
+    "responses": [
+      {
+        "response": "Hello! My name's {player},\nnice to meet you too.",
+        "link": "normal"
+      },
+      {
+        "response": "You're seriously saying yoo?\nAnyway, my name's {player}.",
+        "link": "negative"
+      },
+      {
+        "response": "Love the enthusiasm, I'm {player},\nnice to meet you too.",
+        "link": "compliment"
+      }
+    ]
+  }
+]

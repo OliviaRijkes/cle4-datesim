@@ -7,7 +7,7 @@
     "image": "OnyxHappy",
     "responses": [
       {
-        "response": "Yup, that’s me! {Player} is the name. Nice to meet you.",
+        "response": "Yup, that’s me! {Player} is the \nname. Nice to meet you.",
         "link": "confident"
       },
       {
@@ -56,7 +56,7 @@
   {
     "id": "awkward",
     "name": "Onyx",
-    "dialog": "Oh, uhm.. Don’t worry about it. I know you’re not blind.",
+    "dialog": "Oh, uhm.. Don’t worry about it. I know you’re not \nblind.",
     "emotion": "Awkward",
     "image": "OnyxAwkward",
     "love": -20,
@@ -78,7 +78,7 @@
         "link": "silly"
       },
       {
-        "response": "Why would you say it like that… But yes I am. And the name’s {Player}.",
+        "response": "Why would you say it like that… \nBut yes I am. And the name’s \n{Player}.",
         "link": "idiot"
       }
     ]
@@ -101,7 +101,7 @@
   {
     "id": "idiot",
     "name": "Onyx",
-    "dialog": "It’s a common way of saying it… But let’s move on",
+    "dialog": "It’s a common way of saying it… But let’s move on.",
     "emotion": "Annoyed",
     "image": "OnyxAnnoyed",
     "friendship": -20,
@@ -138,11 +138,11 @@
         "link": "first"
       },
       {
-        "response": "Yes, my friend has been setting me up on some dates lately. I’ve been trying to find the right person.",
+        "response": "Yes, my friend has been setting \nme up on some dates lately. I’ve \nbeen trying to find the right one.",
         "link": "friend"
       },
       {
-        "response": "Yes. You’re one of many people I’m seeing.",
+        "response": "Yes. You’re one of many people \nI’m seeing.",
         "link": "seriously"
       }
     ]
@@ -159,24 +159,7 @@
         "link": "cheeky"
       },
       {
-        "response": "Don’t worry. It’s not your fault if things don’t work out.",
-        "link": "sweet"
-      }
-    ]
-  },
-  {
-    "id": "first",
-    "name": "Onyx",
-    "dialog": "Oh! I hope I don’t disappoint...",
-    "emotion": "Happy",
-    "image": "OnyxHappy",
-    "responses": [
-      {
-        "response": "We’ll see..",
-        "link": "cheeky"
-      },
-      {
-        "response": "Don’t worry. It’s not your fault if things don’t work out.",
+        "response": "Don’t worry. It’s not your fault if \nthings don’t work out.",
         "link": "sweet"
       }
     ]
@@ -191,7 +174,7 @@
     "friendship": 10,
     "responses": [
       {
-        "response": "Hehe okay",
+        "response": "Hehe okay.",
         "link": "genderfluid"
       }
     ]
@@ -231,12 +214,114 @@
     "image": "OnyxHappy",
     "responses": [
       {
-        "response": "Not yet. I’m hoping you might be the one",
-        "link": "friend2"
+        "response": "Not yet. I’m hoping you might be \nthe one",
+        "link": "flirty"
       },
       {
-        "response": "Well there is someone… but I’m not quite sure yet.",
-        "link": "friend2"
+        "response": "Well there is someone… but I’m \nnot quite sure yet.",
+        "link": "unsure"
+      }
+    ]
+  },
+  {
+    "id": "flirty",
+    "name": "Onyx",
+    "dialog": "You're such a tease!!",
+    "emotion": "Playful",
+    "image": "OnyxPlayful",
+    "love": 20,
+    "responses": [
+      {
+        "link": "flirty2"
+      }
+    ]
+  },
+  {
+    "id": "flirty2",
+    "name": "Onyx",
+    "dialog": "But.. Maybe.",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "responses": [
+      {
+        "link": "genderfluid"
+      }
+    ]
+  },
+  {
+    "id": "unsure",
+    "name": "Onyx",
+    "dialog": "Oh, I guess I need to do my best.",
+    "emotion": "Awkward",
+    "image": "OnyxAwkward",
+    "love": -20,
+    "responses": [
+      {
+        "response": "Yea, tho it will be hard beating \nthem.",
+        "link": "why"
+      },
+      {
+        "response": "I didn't mean it like that, just be \nyourself.",
+        "link": "reassurance"
+      }
+    ]
+  },
+  {
+    "id": "why",
+    "name": "Onyx",
+    "dialog": "Why are you even here then?",
+    "emotion": "Sad",
+    "image": "OnyxSad",
+    "love": -20,
+    "friendship": -10,
+    "responses": [
+      {
+        "response": "Well you gotta see the menu first, \nbefore you order.",
+        "link": "ego"
+      },
+      {
+        "response": "I'm not sure.",
+        "link": "badDecision"
+      }
+    ]
+  },
+  {
+    "id": "ego",
+    "name": "Onyx",
+    "dialog": "That's.. not okay. I'm leaving. I hope they figure \nout their worth before you choose them. (end of date)",
+    "emotion": "Annoyed",
+    "image": "OnyxAnnoyed",
+    "love": -50,
+    "friendship": -50,
+    "responses": [
+      {
+        "link": "end"
+      }
+    ]
+  },
+  {
+    "id": "badDecision",
+    "name": "Onyx",
+    "dialog": "I will take my leave then. You should make \nup your mind before you go on any more dates. \n(End of date)",
+    "emotion": "Sad",
+    "image": "OnyxSad",
+    "love": -20,
+    "responses": [
+      {
+        "link": "end"
+      }
+    ]
+  },
+  {
+    "id": "reassurance",
+    "name": "Onyx",
+    "dialog": "Hm.. alright.",
+    "emotion": "Awkward",
+    "image": "OnyxAwkward",
+    "love": 10,
+    "responses": [
+      {
+        "link": "genderfluid"
       }
     ]
   },
@@ -250,11 +335,11 @@
     "love": -10,
     "responses": [
       {
-        "response": "Just that I’ve been going on a lot of dates lately. I’m trying to find the right person.",
+        "response": "Just that I’ve been going on a lot \nof dates lately. I’m trying to find \nthe right person.",
         "link": "complicated"
       },
       {
-        "response": "Just like I said. I’m seeing multiple people at the same time. Do you have a problem with that?  ",
+        "response": "Just like I said. I’m seeing \nmultiple people at the same time. \nDo you have a problem with that?  ",
         "link": "fuckboy"
       }
     ]
@@ -262,7 +347,7 @@
   {
     "id": "complicated",
     "name": "Onyx",
-    "dialog": "Oh okay, yea, love can be complicated at times.",
+    "dialog": "Oh okay, yea, love can be complicated at times. \nSorry.",
     "emotion": "Awkward",
     "image": "OnyxAwkward",
     "friendship": 10,
@@ -290,7 +375,7 @@
   {
     "id": "fuckboy2",
     "name": "Onyx",
-    "dialog": "I’m leaving. Change your attitude if you ever want to find true love.",
+    "dialog": "I’m leaving. Change your attitude if you ever want \nto find true love. (End of date)",
     "emotion": "Angry",
     "image": "OnyxAngry",
     "responses": [
@@ -302,12 +387,12 @@
   {
     "id": "genderfluid",
     "name": "Onyx",
-    "dialog": "I am genderfluid by the way, is that a problem for you?",
+    "dialog": "I am genderfluid by the way, is that a problem for \nyou?",
     "emotion": "Happy",
     "image": "OnyxHappy",
     "responses": [
       {
-        "response": "Of course not! What pronouns should I use for you?",
+        "response": "Of course not! What pronouns \nshould I use for you?",
         "link": "pronouns"
       },
       {
@@ -317,9 +402,39 @@
     ]
   },
   {
+    "id": "continue?",
+    "name": "Onyx",
+    "dialog": "Oh- well, do you still want to give this a shot then or not?",
+    "emotion": "Awkward",
+    "image": "OnyxAwkward",
+    "responses": [
+      {
+        "response": "Well, perhaps we could still be friends?",
+        "link": "friends"
+      },
+      {
+        "response": "Well.. it's not really my preference.",
+        "link": "continue?"
+      }
+    ]
+  },
+  {
+    "id": "friends",
+    "name": "Onyx",
+    "dialog": "Alright. I'd like that.",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "responses": [
+      {
+        "response": "then how should I refer to you?",
+        "link": "pronouns"
+      }
+    ]
+  },
+  {
     "id": "pronouns",
     "name": "Onyx",
-    "dialog": "It changes based on whether I feel more masculine or feminine,\nright now I feel more masculine.",
+    "dialog": "It changes based on whether I feel more \nmasculine or feminine, right now I feel more masculine.",
     "emotion": "Happy",
     "image": "OnyxHappy",
     "friendship": 10,
@@ -333,7 +448,7 @@
   {
     "id": "pronouns2",
     "name": "Onyx",
-    "dialog": "So I'd prefer it if you use he/him pronouns right now.",
+    "dialog": "So I'd prefer it if you use he/him pronouns right \nnow.",
     "emotion": "Happy",
     "image": "OnyxHappy",
     "responses": [
@@ -362,7 +477,7 @@
   {
     "id": "yay",
     "name": "Onyx",
-    "dialog": "Thanks",
+    "dialog": "Thanks.",
     "emotion": "Happy",
     "image": "OnyxHappy",
     "friendship": 5,

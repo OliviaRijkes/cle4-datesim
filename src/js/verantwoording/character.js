@@ -1,5 +1,5 @@
 import {Actor, Vector} from "excalibur";
-import {Resources} from "../resources";
+import {Resources} from "../resources.js";
 
 export class Character extends Actor {
     constructor() {

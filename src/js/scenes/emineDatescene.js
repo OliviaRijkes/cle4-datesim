@@ -1,17 +1,17 @@
 import {Actor, Color, Keys, Scene, Vector} from "excalibur";
 import {DateUI} from "../ui/dateUI.js";
-import onyxData from "../../json/characters/onyx.json";
+import emineData from "../../json/characters/emine.json";
 import {Resources} from "../resources.js";
 import {ChoiceUI} from "../ui/choiceUI.js";
 import {Background} from "../ui/background.js";
 
-export class OnyxDatescene extends Scene {
+export class EmineDatescene extends Scene {
 
     onInitialize(engine) {
         console.log('dateScene start')
 
         // Now you only have to change where the dialogData comes from for each character, not replace dialogData everywhere
-        this.dialogData = onyxData;
+        this.dialogData = emineData;
 
         // Start in branch: begin
         this.currentBranchId = "begin";
@@ -19,7 +19,7 @@ export class OnyxDatescene extends Scene {
 
         // Character needs to be an actor so the image of the character can be shown on the screen
         this.dateCharacter = new Actor({
-            pos: new Vector(660, 360)
+            pos: new Vector(640, 360)
         });
 
         this.add(this.dateCharacter);
@@ -101,13 +101,12 @@ export class OnyxDatescene extends Scene {
         const sprite = Resources[imageName].toSprite();
 
         // you might need to change this again for each character
-        sprite.scale = new Vector(1, 1);
+        sprite.scale = new Vector(0.3, 0.3);
 
         this.dateCharacter.graphics.use(sprite);
     }
 
     selectResponse(responseData) {
-
         // Change branch based on which link is in the json (in responses)
         this.changeBranch(responseData.link);
     }
