@@ -1,0 +1,63 @@
+[
+  {
+    "id": "begin",
+    "name": "Emine",
+    "dialog": "Hello, I'm Emine, what's your name?",
+    "emotion": "Happy",
+    "image": "EmineNeutral",
+    "responses": [
+      {
+        "response": "Hello, I'm {Player},\nnice to meet you.",
+        "link": "normal"
+      },
+      {
+        "response": "I'm {Player}",
+        "link": "dry"
+      },
+      {
+        "response": "The name's {Player} gorgeous",
+        "link": "too fast"
+      }
+    ]
+  },
+  {
+    "id": "dry",
+    "name": "Emine",
+    "dialog": "...",
+    "emotion": "Neutral",
+    "image": "EmineNeutral",
+    "responses": [
+      {
+        "link": ""
+      }
+    ]
+  },
+  {
+    "id": "normal",
+    "name": "Emine",
+    "dialog": "Nice to meet you too!",
+    "emotion": "Happy",
+    "image": "EmineNeutral",
+    "friendship": 10,
+    "love": 5,
+    "responses": [
+      {
+        "link": ""
+      }
+    ]
+  },
+  {
+    "id": "too fast",
+    "name": "Emine",
+    "dialog": "Sweet you think I'm gorgeous,\nbut don't move too fast now",
+    "emotion": "Happy",
+    "image": "EmineNeutral",
+    "friendship": 5,
+    "love": 5,
+    "responses": [
+      {
+        "link": ""
+      }
+    ]
+  }
+]

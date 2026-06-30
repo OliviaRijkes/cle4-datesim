@@ -20,6 +20,7 @@ const Resources = {
     StellaAngry: new ImageSource('images/StellaAngry.png'),
     StellaFlirty: new ImageSource('images/Stella.png'),
     EzraHappy: new ImageSource('images/ezraHappy.png'),
+    EmineNeutral: new ImageSource('images/emineNeutral.png'),
     Background: new ImageSource('images/cafe.jpg'),
     Table: new ImageSource('images/Tafel.png'),
     Choice: new ImageSource('images/choicevlakken55%.png'),
