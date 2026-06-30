@@ -115,5 +115,31 @@
         "link": ""
       }
     ]
+  },
+  {
+    "id": "ty?",
+    "name": "Emine",
+    "dialog": "Uh, thank you?",
+    "emotion": "Neutral",
+    "image": "EmineNeutral",
+    "responses": [
+      {
+        "link": ""
+      }
+    ]
+  },
+  {
+    "id": "disrespectful",
+    "name": "Emine",
+    "dialog": "I can't just take off my hijab, why would you ask me that?",
+    "emotion": "Angry",
+    "image": "EmineNeutral",
+    "friendship": -15,
+    "love": -15,
+    "responses": [
+      {
+        "link": ""
+      }
+    ]
   }
 ]
