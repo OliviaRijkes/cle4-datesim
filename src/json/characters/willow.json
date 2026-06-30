@@ -553,7 +553,7 @@
   {
     "id": "swimming",
     "name": "Willow",
-    "dialog": "Oh, I love swimming! I don't do it as a sport, but it's a fun activity.",
+    "dialog": "Oh, I love swimming! I don't do it as a sport, \nbut it's a fun activity.",
     "emotion": "Happy",
     "image": "WillowHappy",
     "friendship": 5,
