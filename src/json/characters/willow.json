@@ -452,7 +452,7 @@
   {
     "id": "which game",
     "name": "Willow",
-    "dialog": "Ooh, what type of games do you like? Maybe we could play together!",
+    "dialog": "Ooh, what type of games do you like? \nMaybe we could play together!",
     "emotion": "Happy",
     "image": "WillowHappy",
     "friendship": 5,
