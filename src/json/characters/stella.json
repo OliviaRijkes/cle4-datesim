@@ -549,7 +549,7 @@
   {
     "id": "musictrade",
     "name": "Stella",
-    "dialog": "So cute! I will send you some songs when i get home. I expect to also recieve some from you",
+    "dialog": "So cute! I will send you some songs when i get home. I expect to also receive some from you",
     "emotion": "Excited",
     "image": "StellaExcited",
     "friendship": 10,
@@ -607,7 +607,7 @@
         "link": "sweet"
       },
       {
-        "response": "Probally",
+        "response": "Probably",
         "link": "nottaste"
       }
     ]
@@ -747,7 +747,7 @@
     "responses": [
       {
         "response": "THIS IS MOVING TO QUICKLY",
-        "link": "tooquick"
+        "link": "too quick"
       },
       {
         "response": "I do make a great first impression~",
@@ -782,7 +782,7 @@
     "love": 10,
     "responses": [
       {
-        "response": "ofcouse!",
+        "response": "ofcourse!",
         "link": "homepage?"
       }
     ]
