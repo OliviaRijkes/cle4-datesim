@@ -30,7 +30,7 @@
     "love": 10,
     "responses": [
       {
-        "link": "next"
+        "link": "genderfluid"
       }
     ]
   },
@@ -404,17 +404,22 @@
   {
     "id": "continue?",
     "name": "Onyx",
-    "dialog": "Oh- well, do you still want to give this a shot then or not?",
+    "dialog": "Oh- well, do you still want to give this a shot then \nor not?",
     "emotion": "Awkward",
     "image": "OnyxAwkward",
+    "love": -15,
     "responses": [
       {
-        "response": "Well, perhaps we could still be friends?",
+        "response": "Well, perhaps we could still be \nfriends?",
         "link": "friends"
       },
       {
-        "response": "Well.. it's not really my preference.",
-        "link": "continue?"
+        "response": "Yes I am not used to it but I want \nto see this out.",
+        "link": "continue"
+      },
+      {
+        "response": "No.. I think I'll leave, sorry. You \nseem like a kind person though.\nGood luck.",
+        "link": "goodLuck"
       }
     ]
   },
@@ -424,10 +429,52 @@
     "dialog": "Alright. I'd like that.",
     "emotion": "Happy",
     "image": "OnyxHappy",
+    "friendship": 20,
     "responses": [
       {
-        "response": "then how should I refer to you?",
+        "response": "then.. how should I refer to you?",
         "link": "pronouns"
+      }
+    ]
+  },
+  {
+    "id": "continue",
+    "name": "Onyx",
+    "dialog": "Alright, that's okay. Let me explain how my \npronouns work for you then.",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "love": 10,
+    "friendship": 10,
+    "responses": [
+      {
+        "response": "Okay",
+        "link": "pronouns"
+      }
+    ]
+  },
+  {
+    "id": "goodLuck",
+    "name": "Onyx",
+    "dialog": "Oh.. okay.",
+    "emotion": "Sad",
+    "image": "OnyxSad",
+    "love": -30,
+    "friendship": -10,
+    "responses": [
+      {
+        "link": "goodLuck2"
+      }
+    ]
+  },
+  {
+    "id": "goodLuck2",
+    "name": "Onyx",
+    "dialog": "Thanks, you too. (end of date)",
+    "emotion": "Awkward",
+    "image": "OnyxAwkward",
+    "responses": [
+      {
+        "link": "end"
       }
     ]
   },
@@ -492,8 +539,8 @@
     "id": "oh",
     "name": "Onyx",
     "dialog": "Oh okay.",
-    "emotion": "Sad",
-    "image": "OnyxSad",
+    "emotion": "Awkward",
+    "image": "OnyxAwkward",
     "love": -10,
     "responses": [
       {
@@ -509,7 +556,302 @@
     "image": "OnyxHappy",
     "responses": [
       {
-        "link": "questions"
+        "response": "Yes, what are your hobbies?",
+        "link": "hobbies"
+      }
+    ]
+  },
+  {
+    "id": "hobbies",
+    "name": "Onyx",
+    "dialog": "Oh! I have lots honestly. But I'd say my favorite is \nplaying D&D with my friends.",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "responses": [
+      {
+        "response": "Oohh I love D&D!",
+        "link": "playTogether?"
+      },
+      {
+        "response": "What is that?",
+        "link": "meaningD&D"
+      }
+    ]
+  },
+  {
+    "id": "playTogether?",
+    "name": "Onyx",
+    "dialog": "No way! We should play together sometime!",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "love": 15,
+    "friendship": 15,
+    "responses": [
+      {
+        "response": "I'd love that!",
+        "link": "hobbiesTwo"
+      }
+    ]
+  },
+  {
+    "id": "meaningD&D",
+    "name": "Onyx",
+    "dialog": "It stands for Dungeons & Dragons. It's a fantasy \nroleplay game. Perhaps I could introduce you to it \nsometime?",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "responses": [
+      {
+        "response": "Sure, sounds fun.",
+        "link": "Introduce"
+      },
+      {
+        "response": "Thanks for the offer but no, I \ndon't really like those kind of \ngames.",
+        "link": "okay"
+      }
+    ]
+  },
+  {
+    "id": "Introduce",
+    "name": "Onyx",
+    "dialog": "You bet it is!",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "love": 10,
+    "friendship": 10,
+    "responses": [
+      {
+        "link": "hobbiesTwo"
+      }
+    ]
+  },
+  {
+    "id": "okay",
+    "name": "Onyx",
+    "dialog": "That's okay too. There's many other things we \ncan do together.",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "responses": [
+      {
+        "link": "hobbiesTwo"
+      }
+    ]
+  },
+  {
+    "id": "hobbiesTwo",
+    "name": "Onyx",
+    "dialog": "How about you? What is a hobby of yours?",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "responses": [
+      {
+        "response": "I like sports",
+        "link": "sports"
+      },
+      {
+        "response": "I like dancing",
+        "link": "dancing"
+      },
+      {
+        "response": "I like drawing",
+        "link": "drawing"
+      },
+      {
+        "response": "I don't have any",
+        "link": "home"
+      }
+    ]
+  },
+  {
+    "id": "dancing",
+    "name": "Onyx",
+    "dialog": "Wow. I like dancing too!",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "love": 10,
+    "friendship": 10,
+    "responses": [
+      {
+        "response": "Maybe we could dance together?",
+        "link": "dancing2"
+      }
+    ]
+  },
+  {
+    "id": "dancing2",
+    "name": "Onyx",
+    "dialog": "I'd love that.",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "love": 10,
+    "responses": [
+      {
+        "link": "goodEnd"
+      }
+    ]
+  },
+  {
+    "id": "drawing",
+    "name": "Onyx",
+    "dialog": "Oh cool! I like drawing too, but I don't do it often.",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "friendship": 10,
+    "responses": [
+      {
+        "link": "goodEnd"
+      }
+    ]
+  },
+  {
+    "id": "sports",
+    "name": "Onyx",
+    "dialog": "Oh I see! Sports in particular don't interest me \nvery much, but I do like staying active.",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "friendship": 5,
+    "responses": [
+      {
+        "link": "goodEnd"
+      }
+    ]
+  },
+  {
+    "id": "home",
+    "name": "Onyx",
+    "dialog": "Oh, then what do you do in your free time?",
+    "emotion": "Awkward",
+    "image": "OnyxAwkward",
+    "friendship": -10,
+    "love": -20,
+    "responses": [
+      {
+        "response": "Sleep",
+        "link": "sleep"
+      },
+      {
+        "response": "Lay in bed with my cat",
+        "link": "cats"
+      }
+    ]
+  },
+  {
+    "id": "sleep",
+    "name": "Onyx",
+    "dialog": "That's not really all is it?",
+    "emotion": "Annoyed",
+    "image": "OnyxAnnoyed",
+    "responses": [
+      {
+        "response": "It is.",
+        "link": "lazy"
+      }
+    ]
+  },
+  {
+    "id": "lazy",
+    "name": "Onyx",
+    "dialog": "Err.. I don't think we are very compatible then.",
+    "emotion": "Sad",
+    "image": "OnyxSad",
+    "friendship": -15,
+    "love": -70,
+    "responses": [
+      {
+        "response": "...",
+        "link": "gottaGo"
+      }
+    ]
+  },
+  {
+    "id": "gottaGo",
+    "name": "Onyx",
+    "dialog": "Anyway.. I gotta go. Perhaps we could still stay \nfriends?",
+    "emotion": "Awkward",
+    "image": "OnyxAwkward",
+    "responses": [
+      {
+        "response": "sure.",
+        "link": "cya"
+      }
+    ]
+  },
+  {
+    "id": "cya",
+    "name": "Onyx",
+    "dialog": "Alright, cya! (end of date)",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "responses": [
+      {
+        "link": "end"
+      }
+    ]
+  },
+  {
+    "id": "cats",
+    "name": "Onyx",
+    "dialog": "Oh I love cats! Sadly don't have one of my own \ntho, since I live with my grandparents.",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "friendship": 10,
+    "responses": [
+      {
+        "response": "Aww that's a shame.",
+        "link": "aShame"
+      },
+      {
+        "response": "You can come over to my house \nsometime to play with my cat.",
+        "link": "cats2"
+      }
+    ]
+  },
+  {
+    "id": "aShame",
+    "name": "Onyx",
+    "dialog": "It is, but I can still get one later, when I move out.",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "responses": [
+      {
+        "link": "goodEnd"
+      }
+    ]
+  },
+  {
+    "id": "cats2",
+    "name": "Onyx",
+    "dialog": "Haha sure! But that won't be the only activity \nthen, right?",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "friendship": 10,
+    "responses": [
+      {
+        "link": "goodEnd"
+      }
+    ]
+  },
+  {
+    "id": "goodEnd",
+    "name": "Onyx",
+    "dialog": "Anyway, I gotta go now, but I really enjoyed my \ntime with you!!",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "responses": [
+      {
+        "response": "Me too. See you next time?",
+        "link": "nextTime"
+      }
+    ]
+  },
+  {
+    "id": "nextTime",
+    "name": "Onyx",
+    "dialog": "Yes. Until next time! (end of date)",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "responses": [
+      {
+        "link": "end"
       }
     ]
   }
