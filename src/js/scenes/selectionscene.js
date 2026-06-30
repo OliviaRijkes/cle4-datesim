@@ -39,20 +39,31 @@ export class Selectionscene extends Scene {
         const beginYPos = 150
         const imageSize =100
         const spaceBetween = 120
+        
+        const characters = ["WillowHappy","OnyxHappy","StellaHappy","EzraHappy","EmineNeutral"]
 
+        for (let i = 0; i < characters.length; i++) {
+            const character = new Actor({width:100,height:100})
+            character.graphics.use(Resources[characters[i]].toSprite())
+            character.scale = new Vector(0.1,0.1)
+            character.pos = new Vector(1020,150+120*i)
+            this.add(character)
+            
+        }
     }
     loadBio() {
         //this.bio = selectedCharacter.bio image
     }
-    selectionClick(character) {
-        console.log(character)
+    selectionClick(characterIndex) {
+        const character = characters[characterIndex]
+        this.confirmButton.text = `Bevestig date met ${character}`
         //change the selectedCharacter
         //loadBio()
         //make the image stand-out from the rest of the selection screen
     }
     confirmClick() {
         //starts the date for pl1
-            this.goToScene(`${this.selectedCharacter.name}`)
+            this.goToScene(`date${this.selectedCharacter.name}`)
 
         //show QR
     }
