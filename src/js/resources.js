@@ -20,6 +20,9 @@ const Resources = {
     StellaAngry: new ImageSource('images/StellaAngry.png'),
     StellaFlirty: new ImageSource('images/Stella.png'),
     EzraHappy: new ImageSource('images/ezraHappy.png'),
+    CristinaHappy: new ImageSource('images/CristinaHappy.png'),
+    CristinaIrritated: new ImageSource('images/CristinaIrritated.png'),
+    CristinaAngry: new ImageSource('images/CristinaAngry.png'),
     EmineNeutral: new ImageSource('images/emineNeutral.png'),
     Background: new ImageSource('images/cafe.jpg'),
     Table: new ImageSource('images/Tafel.png'),
@@ -32,6 +35,7 @@ const Resources = {
     StellaProfile: new ImageSource('images/StellaProfile.png'),
     EzraProfile: new ImageSource('images/ezraprofile.png'),
     EmineProfile: new ImageSource('images/emineProfile.png'),
+    CristinaProfile: new ImageSource('images/CristinaProfile.png'),
 
     
 

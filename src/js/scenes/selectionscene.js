@@ -23,7 +23,7 @@ export class Selectionscene extends Scene {
         })
         //internal variables
         this.selectedCharacter
-        this.characters = ["Willow","Onyx","Stella","Ezra","Emine"]
+        this.characters = ["Willow","Onyx","Stella","Ezra","Emine","Cristina"]
 
         //load everything now
         this.add(this.bio)
@@ -50,7 +50,7 @@ export class Selectionscene extends Scene {
             const character = new Actor({width:2100,height:2100})
             character.graphics.use(Resources[`${characters[i]}Profile`].toSprite())
             character.scale = new Vector(0.05,0.05)
-            character.pos = new Vector(1020,150+120*i)
+            character.pos = new Vector(1020,60+120*i)
             this.add(character)
             character.on("pointerdown",()=>this.selectionClick(i))
             

@@ -7,6 +7,7 @@ import {StellaDatescene} from "./scenes/stellaDatescene.js";
 import {EzraDatescene} from "./scenes/ezraDatescene.js";
 import {EmineDatescene} from "./scenes/emineDatescene.js";
 import { Selectionscene } from './scenes/selectionscene.js';
+import {CristinaDatescene} from "./scenes/CristinaDatescene.js";
 
 export class Game extends Engine {
 
@@ -30,11 +31,13 @@ export class Game extends Engine {
         this.addScene("dateStella", new StellaDatescene())
         this.addScene("dateEzra", new EzraDatescene())
         this.addScene("dateEmine", new EmineDatescene())
+        this.addScene("dateCristina", new CristinaDatescene())
         // this.goToScene("dateWillow")
         // this.goToScene("dateOnyx")
         // this.goToScene("dateStella")
         // this.goToScene("dateEzra")
         // this.goToScene("dateEmine")
+        // this.goToScene("dateCristina")
 
         this.goToScene("selection")
 

@@ -1,0 +1,70 @@
+[
+  {
+    "id": "begin",
+    "name": "Cristina",
+    "dialog": "Hello, you must be the blind date. How are you",
+    "emotion": "Happy",
+    "image": "CristinaHappy",
+    "responses": [
+      {
+        "response": "Good, nice to meet you.",
+        "link": "positive"
+      },
+      {
+        "response": "I think you got the wrong person",
+        "link": "wrongperson"
+      },
+      {
+        "response": "eueh, you're a little older than i\nexpected. I put my age limit at 25",
+        "link": "littleolder"
+      }
+    ]
+  },
+  {
+    "id": "littleolder",
+    "name": "Cristina",
+    "dialog": "oh dear, I may have miss clicked when entering\nmy age. But i do have a young soul if you don't mind that\ni'm a little older",
+    "emotion": "Happy",
+    "image": "CristinaHappy",
+    "responses": [
+      {
+        "response": "I could get to know you better,\nbefore i judge",
+        "link": "beforeijudge"
+      },
+      {
+        "response": "A young soul doesný change the\nfact that you're almost twice my age",
+        "link": "twiceage"
+      }
+    ]
+  },
+  {
+    "id": "twiceage",
+    "name": "Cristina",
+    "dialog": "Rude I'm not even that old.\n have your parents not thought you any manners!",
+    "emotion": "Irritated",
+    "image": "CristinaIrritated",
+    "responses": [
+      {
+        "response": "I'm just not interested in someone older okay.",
+        "link": "calmed"
+      },
+      {
+        "response": "i'm not interested in dating a dinosaur!",
+        "link": "dino"
+      }
+    ]
+  },
+  {
+    "id": "twiceage",
+    "name": "Cristina",
+    "dialog": "A DINOSAUR! You immature todler! i'm leaving",
+    "emotion": "Angry",
+    "image": "CristinaAngry",
+    "responses": [
+      {
+
+        "link": "ending"
+      }
+    ]
+  }
+]
