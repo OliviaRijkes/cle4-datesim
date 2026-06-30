@@ -26,6 +26,16 @@ const Resources = {
     Choice: new ImageSource('images/choicevlakken55%.png'),
     Maintext: new ImageSource('images/textvlakken55%.png'),
     Font: new FontSource('images/Merriweather-VariableFont_opsz,wdth,wght.ttf', 'StandardFont'),
+
+    WillowProfile: new ImageSource('images/willowProfile.png'),
+    OnyxProfile: new ImageSource('images/onyxprofile.png'),
+    StellaProfile: new ImageSource('images/StellaProfile.png'),
+    EzraProfile: new ImageSource('images/ezraprofile.png'),
+    EmineProfile: new ImageSource('images/emineProfile.png'),
+
+    
+
+
 }
 
 
