@@ -28,7 +28,7 @@
     "image": "EmineNeutral",
     "responses": [
       {
-        "link": ""
+        "link": "hair"
       }
     ]
   },
@@ -42,18 +42,74 @@
     "love": 5,
     "responses": [
       {
-        "link": ""
+        "link": "hair"
       }
     ]
   },
   {
     "id": "too fast",
     "name": "Emine",
-    "dialog": "Sweet you think I'm gorgeous,\nbut don't move too fast now",
+    "dialog": "Sweet you think I'm gorgeous,\nbut don't move too fast now.",
     "emotion": "Happy",
     "image": "EmineNeutral",
     "friendship": 5,
     "love": 5,
+    "responses": [
+      {
+        "link": "hair"
+      }
+    ]
+  },
+  {
+    "id": "hair",
+    "name": "Emine",
+    "dialog": "I love your hair by the way!",
+    "emotion": "Happy",
+    "image": "EmineNeutral",
+    "friendship": 5,
+    "love": 5,
+    "responses": [
+      {
+        "response": "Oh, thank you!\nI like yours too!",
+        "link": "what"
+      },
+      {
+        "response": "Thank you!\nYou also look cute.",
+        "link": "ty"
+      },
+      {
+        "response": "Thank you!",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "id": "what",
+    "name": "Emine",
+    "dialog": "You haven't even seen my hair..",
+    "emotion": "Confused",
+    "image": "EmineNeutral",
+    "friendship": -5,
+    "love": -5,
+    "responses": [
+      {
+        "response": "Well yeah, \nbut I'm sure it's very pretty!",
+        "link": "ty?"
+      },
+      {
+        "response": "Then show me, \nyou don't have to be shy.",
+        "link": "disrespectful"
+      }
+    ]
+  },
+  {
+    "id": "ty",
+    "name": "Emine",
+    "dialog": "You think so? Thank you!",
+    "emotion": "Flustered",
+    "image": "EmineNeutral",
+    "friendship": 10,
+    "love": 15,
     "responses": [
       {
         "link": ""
