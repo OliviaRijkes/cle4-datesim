@@ -19,7 +19,7 @@ export class OnyxDatescene extends Scene {
 
         // Character needs to be an actor so the image of the character can be shown on the screen
         this.dateCharacter = new Actor({
-            pos: new Vector(640, 360)
+            pos: new Vector(660, 360)
         });
 
         this.add(this.dateCharacter);

@@ -174,7 +174,7 @@
     "friendship": 10,
     "responses": [
       {
-        "response": "Hehe okay",
+        "response": "Hehe okay.",
         "link": "genderfluid"
       }
     ]
@@ -215,11 +215,113 @@
     "responses": [
       {
         "response": "Not yet. I’m hoping you might be \nthe one",
-        "link": "friend2"
+        "link": "flirty"
       },
       {
         "response": "Well there is someone… but I’m \nnot quite sure yet.",
-        "link": "friend2"
+        "link": "unsure"
+      }
+    ]
+  },
+  {
+    "id": "flirty",
+    "name": "Onyx",
+    "dialog": "You're such a tease!!",
+    "emotion": "Playful",
+    "image": "OnyxPlayful",
+    "love": 20,
+    "responses": [
+      {
+        "link": "flirty2"
+      }
+    ]
+  },
+  {
+    "id": "flirty2",
+    "name": "Onyx",
+    "dialog": "But.. Maybe.",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "responses": [
+      {
+        "link": "genderfluid"
+      }
+    ]
+  },
+  {
+    "id": "unsure",
+    "name": "Onyx",
+    "dialog": "Oh, I guess I need to do my best.",
+    "emotion": "Awkward",
+    "image": "OnyxAwkward",
+    "love": -20,
+    "responses": [
+      {
+        "response": "Yea, tho it will be hard beating \nthem.",
+        "link": "why"
+      },
+      {
+        "response": "I didn't mean it like that, just be \nyourself.",
+        "link": "reassurance"
+      }
+    ]
+  },
+  {
+    "id": "why",
+    "name": "Onyx",
+    "dialog": "Why are you even here then?",
+    "emotion": "Sad",
+    "image": "OnyxSad",
+    "love": -20,
+    "friendship": -10,
+    "responses": [
+      {
+        "response": "Well you gotta see the menu first, \nbefore you order.",
+        "link": "ego"
+      },
+      {
+        "response": "I'm not sure.",
+        "link": "badDecision"
+      }
+    ]
+  },
+  {
+    "id": "ego",
+    "name": "Onyx",
+    "dialog": "That's.. not okay. I'm leaving. I hope they figure \nout their worth before you choose them. (end of date)",
+    "emotion": "Annoyed",
+    "image": "OnyxAnnoyed",
+    "love": -50,
+    "friendship": -50,
+    "responses": [
+      {
+        "link": "end"
+      }
+    ]
+  },
+  {
+    "id": "badDecision",
+    "name": "Onyx",
+    "dialog": "I will take my leave then. You should make \nup your mind before you go on any more dates. \n(End of date)",
+    "emotion": "Sad",
+    "image": "OnyxSad",
+    "love": -20,
+    "responses": [
+      {
+        "link": "end"
+      }
+    ]
+  },
+  {
+    "id": "reassurance",
+    "name": "Onyx",
+    "dialog": "Hm.. alright.",
+    "emotion": "Awkward",
+    "image": "OnyxAwkward",
+    "love": 10,
+    "responses": [
+      {
+        "link": "genderfluid"
       }
     ]
   },
@@ -296,6 +398,36 @@
       {
         "response": "Well.. it's not really my preference.",
         "link": "continue?"
+      }
+    ]
+  },
+  {
+    "id": "continue?",
+    "name": "Onyx",
+    "dialog": "Oh- well, do you still want to give this a shot then or not?",
+    "emotion": "Awkward",
+    "image": "OnyxAwkward",
+    "responses": [
+      {
+        "response": "Well, perhaps we could still be friends?",
+        "link": "friends"
+      },
+      {
+        "response": "Well.. it's not really my preference.",
+        "link": "continue?"
+      }
+    ]
+  },
+  {
+    "id": "friends",
+    "name": "Onyx",
+    "dialog": "Alright. I'd like that.",
+    "emotion": "Happy",
+    "image": "OnyxHappy",
+    "responses": [
+      {
+        "response": "then how should I refer to you?",
+        "link": "pronouns"
       }
     ]
   },
