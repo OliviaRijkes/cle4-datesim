@@ -454,8 +454,10 @@
     "id": "stellamusic",
     "name": "Stella",
     "dialog": "My favourite band is Steelica. My parents always played it so i kind of grew up on it. From there i discovered other bands i like. ",
-    "emotion": "happy",
-    "image": "StellaHappy",
+    "emotion": "Excited",
+    "image": "StellaExcited",
+    "love": 10,
+    "friendship": 10,
     "responses": [
       {
         "response": "Steelica is pretty good. What are the other bands you like?",
@@ -474,21 +476,326 @@
   {
     "id": "otherbands",
     "name": "Stella",
-    "dialog": "My favourite band is Steelica. My parents always\nplayed it so i kind of grew up on it. From there i discovered other bands i like. ",
+    "dialog": "I like a lot of music but some highlights for me are System of a up, Yellow Day and Sleeping with Mermaids.",
+    "emotion": "happy",
+    "image": "StellaHappy",
+    "friendship": 10,
+    "responses": [
+      {
+        "response": "You have an amazing music taste!",
+        "link": "amazingmusic"
+      },
+      {
+        "response": "No clue who those are, are they more underground?",
+        "link": "noclue"
+      },
+      {
+        "response": "I heard of some of em, I will give them a listen when I get home",
+        "link": "listen"
+      }
+    ]
+  },
+  {
+    "id": "listen",
+    "name": "Stella",
+    "dialog": "That would be amazing, I can also give some of your favorite bands a listen.",
+    "emotion": "Excited",
+    "image": "StellaExcited",
+    "friendship": 10,
+    "love": 20,
+    "responses": [
+      {
+        "response": "Yess, music trade!",
+        "link": "musictrade"
+      },
+      {
+        "response": "I don't know i don't like sharing my music.",
+        "link": "sharingmusic"
+      }
+    ]
+  },
+  {
+    "id": "listen",
+    "name": "Stella",
+    "dialog": "ehm, Okay. I have to leave to catch my train. I will message you later.",
+    "emotion": "Irritated",
+    "image": "StellaIrritated",
+    "friendship": -5,
+    "love": -5,
+    "responses": [
+      {
+        "response": "Okay, take care.",
+        "link": "homescreen?"
+      },
+      {
+        "response": "Maybe we could hang out again some time.",
+        "link": "hangout."
+      }
+    ]
+  },
+  {
+    "id": "listen",
+    "name": "Stella",
+    "dialog": "I will think about it, bye!",
+    "emotion": "Happy",
+    "image": "StellaHappy",
+    "responses": [
+      {
+        "response": "",
+        "link": "homescreen?"
+      }
+    ]
+  },
+  {
+    "id": "musictrade",
+    "name": "Stella",
+    "dialog": "So cute! I will send you some songs when i get home. I expect to also recieve some from you",
+    "emotion": "Excited",
+    "image": "StellaExcited",
+    "friendship": 10,
+    "love": 20,
+    "responses": [
+      {
+        "response": "When i get the time, I have some other things to do today",
+        "link": "time"
+      },
+      {
+        "response": "Yes! ofcourse.",
+        "link": "ofcourse"
+      }
+    ]
+  },
+  {
+    "id": "time",
+    "name": "Stella",
+    "dialog": "I will look out for them, speaking of i have to catch mmy train. Today was fun!",
+    "emotion": "Happy",
+    "image": "StellaHappy",
+    "friendship": 5,
+    "love": 5,
+    "responses": [
+      {
+        "response": "bye! bye!",
+        "link": "homescreen?"
+      }
+    ]
+  },
+  {
+    "id": "time",
+    "name": "Stella",
+    "dialog": "Okay, I assume you have to go then",
+    "emotion": "Happy",
+    "image": "StellaHappy",
+    "friendship": -5,
+    "love": -5,
+    "responses": [
+      {
+        "response": "Yes, thanks for today",
+        "link": "homescreen?"
+      }
+    ]
+  },
+  {
+    "id": "noclue",
+    "name": "Stella",
+    "dialog": "No not really, maybe they're just not your taste.",
     "emotion": "happy",
     "image": "StellaHappy",
     "responses": [
       {
-        "response": "Steelica is pretty good.\nWhat are the other bands you like?",
+        "response": "My bad, I would love to give them a try for you.",
+        "link": "sweet"
+      },
+      {
+        "response": "Probally",
+        "link": "nottaste"
+      }
+    ]
+  },
+  {
+    "id": "amazingmusic",
+    "name": "Stella",
+    "dialog": "Thank you, you also know your music well. I'm having a lot fun! but i think it's time for me to go.",
+    "emotion": "happy",
+    "image": "StellaHappy",
+    "love": 10,
+    "friendship": 10,
+    "responses": [
+      {
+        "response": "I also had a lot of fun! Do you want to meet up again?",
+        "link": "maybesecond"
+      },
+      {
+        "response": "Yeah me too, It was fun meeting you!",
+        "link": "homepage?"
+      }
+    ]
+  },
+  {
+    "id": "what",
+    "name": "Stella",
+    "dialog": "Oh, you know. The band that wrote Mistress of plushies. It's on the radio sometimes.",
+    "emotion": "happy",
+    "image": "StellaHappy",
+    "love": 5,
+    "friendship": 5,
+    "responses": [
+      {
+        "response": "Still no clue, but that's fine. Do you have other band you like?",
         "link": "otherbands"
       },
       {
-        "response": "My favourite band is also Steelica.\nI'm kind of jealous my parents aren't into it so much sadly.",
-        "link": "favoriteband"
+        "response": "Oooh, yeah i've heard that one before. they're pretty good",
+        "link": "iknowright"
       },
       {
-        "response": "What's steelica",
-        "link": "what"
+        "response": "Oooh, yeah i've heard that one before... not my taste tho",
+        "link": "nottaste"
+      }
+    ]
+  },
+  {
+    "id": "iknowright",
+    "name": "Stella",
+    "dialog": "I know right!",
+    "emotion": "happy",
+    "image": "StellaHappy",
+    "love": 10,
+    "responses": [
+      {
+        "response": "Do you have other band you like?",
+        "link": "otherbands"
+      }
+    ]
+  },
+  {
+    "id": "nottaste",
+    "name": "Stella",
+    "dialog": "That's okay, it's not for everyone",
+    "emotion": "happy",
+    "image": "StellaHappy",
+    "responses": [
+      {
+        "response": "Do you want to end it at that then?",
+        "link": "homepage?"
+      },
+      {
+        "response": "Maybe next time we can find something to bond over?",
+        "link": "maybesecond"
+      }
+    ]
+  },
+  {
+    "id": "favoriteband",
+    "name": "Stella",
+    "dialog": "Awh, you can borrow mine. They actually met at an Steelica concert.",
+    "emotion": "happy",
+    "image": "StellaHappy",
+    "love": 25,
+    "friendship": 20,
+    "responses": [
+      {
+        "response": "owh no need, mine are already good enough.",
+        "link": "sweet"
+      },
+      {
+        "response": "That's so cool! I wish to have seen them in their prime",
+        "link": "prime"
+      },
+      {
+        "response": "You want me to meet your parents?",
+        "link": "parents"
+      }
+    ]
+  },
+  {
+    "id": "sweet",
+    "name": "Stella",
+    "dialog": "awh, that's sweet. Do you want to call it a day for now?",
+    "emotion": "happy",
+    "image": "StellaHappy",
+    "responses": [
+      {
+        "response": "Sure! I had a lot of fun today.",
+        "link": "homepage?"
+      },
+      {
+        "response": "So soon? I'm kidding. That's okey, do you want to meet up again? ",
+        "link": "maybesecond"
+      }
+    ]
+  },
+  {
+    "id": "maybesecond",
+    "name": "Stella",
+    "dialog": "I would love to!",
+    "emotion": "happy",
+    "image": "StellaHappy",
+    "responses": [
+      {
+        "link": "homepage?"
+      }
+    ]
+  },
+  {
+    "id": "parents",
+    "name": "Stella",
+    "dialog": "Yeah, I think they would approve of you.",
+    "emotion": "happy",
+    "image": "StellaHappy",
+    "love": 25,
+    "responses": [
+      {
+        "response": "THIS IS MOVING TO QUICKLY",
+        "link": "tooquick"
+      },
+      {
+        "response": "I do make a great first impression~",
+        "link": "impression"
+      },
+      {
+        "response": "Maybe a second date before that.",
+        "link": "second"
+      }
+    ]
+  },
+  {
+    "id": "second",
+    "name": "Stella",
+    "dialog": "Ofcourse, i was also not planning on showing you off after a first date.",
+    "emotion": "happy",
+    "image": "StellaHappy",
+    "love": 10,
+    "responses": [
+      {
+        "response": "sound good!",
+        "link": "homepage?"
+      }
+    ]
+  },
+  {
+    "id": "impression",
+    "name": "Stella",
+    "dialog": "okay maybe a second date before that.",
+    "emotion": "happy",
+    "image": "StellaHappy",
+    "love": 10,
+    "responses": [
+      {
+        "response": "ofcouse!",
+        "link": "homepage?"
+      }
+    ]
+  },
+  {
+    "id": "too quick",
+    "name": "Stella",
+    "dialog": "Whoaww. We can call it a day if you want.",
+    "emotion": "Irritated",
+    "image": "StellaIrritated",
+    "responses": [
+      {
+        "link": "homepage?"
       }
     ]
   }
