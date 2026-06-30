@@ -209,7 +209,7 @@
       },
       {
         "response": "I like gaming.",
-        "link": "together"
+        "link": "which game"
       }
     ]
   },
@@ -233,6 +233,108 @@
       {
         "response": "Yes, lots of stuff",
         "link": "what stuff"
+      }
+    ]
+  },
+  {
+    "id": "intention",
+    "name": "Willow",
+    "dialog": "Only till you find the right person though right?",
+    "emotion": "Confused",
+    "image": "WillowConfused",
+    "friendship": -10,
+    "love": -10,
+    "responses": [
+      {
+        "response": "No, i just date a lot of people at the same time to try them out.",
+        "link": "player"
+      },
+      {
+        "response": "Yeah ofcourse! I date to marry.",
+        "link": "good"
+      }
+    ]
+  },
+  {
+    "id": "uninteresting",
+    "name": "Willow",
+    "dialog": "Uh.. okay.",
+    "emotion": "Confused",
+    "image": "WillowConfused",
+    "friendship": -10,
+    "love": -10,
+    "responses": [
+      {
+        "link": "date ends well"
+      }
+    ]
+  },
+  {
+    "id": "what stuff",
+    "name": "Willow",
+    "dialog": "Uh.. what 'stuff'?.",
+    "emotion": "Confused",
+    "image": "WillowConfused",
+    "friendship": -5,
+    "love": -5,
+    "responses": [
+      {
+        "response": "I don't know",
+        "link": "uninteresting"
+      },
+      {
+        "response": "Drawing",
+        "link": "counts"
+      },
+      {
+        "response": "Playing with my cat",
+        "link": "counts"
+      },
+      {
+        "response": "Sleeping",
+        "link": "counts"
+      }
+    ]
+  },
+  {
+    "id": "counts",
+    "name": "Willow",
+    "dialog": "That kind of counts as a hobby too!",
+    "emotion": "Happy",
+    "image": "WillowHappy",
+    "friendship": 10,
+    "love": 10,
+    "responses": [
+      {
+        "link": "date ends well"
+      }
+    ]
+  },
+  {
+    "id": "player",
+    "name": "Willow",
+    "dialog": "Seriously? I'm not here so you can 'try me out'.",
+    "emotion": "Angry",
+    "image": "WillowAngry",
+    "friendship": -15,
+    "love": -15,
+    "responses": [
+      {
+        "link": "date ends badly"
+      }
+    ]
+  },
+  {
+    "id": "good",
+    "name": "Willow",
+    "dialog": "Oh okay, that's good, I misunderstood you, sorry.",
+    "emotion": "Angry",
+    "image": "WillowAngry",
+    "friendship": 5,
+    "love": 5,
+    "responses": [
+      {
+        "link": "date ends badly"
       }
     ]
   },
@@ -264,6 +366,63 @@
     ]
   },
   {
+    "id": "when",
+    "name": "Willow",
+    "dialog": "Good, Then we can go soon!",
+    "emotion": "Happy",
+    "image": "WillowHappy",
+    "friendship": 15,
+    "love": 15,
+    "responses": [
+      {
+        "response": "I'd love to!",
+        "link": "date ending soon"
+      }
+    ]
+  },
+  {
+    "id": "disappointing",
+    "name": "Willow",
+    "dialog": "Oh.. okay.",
+    "emotion": "Confused",
+    "image": "WillowConfused",
+    "friendship": -10,
+    "love": -10,
+    "responses": [
+      {
+        "link": "date ending soon"
+      }
+    ]
+  },
+  {
+    "id": "why",
+    "name": "Willow",
+    "dialog": "Why would you lie about that..",
+    "emotion": "Confused",
+    "image": "WillowConfused",
+    "friendship": -15,
+    "love": -15,
+    "responses": [
+      {
+        "link": "date ending soon"
+      }
+    ]
+  },
+  {
+    "id": "exactly",
+    "name": "Willow",
+    "dialog": "Yeah, exactly!",
+    "emotion": "Happy",
+    "image": "WillowHappy",
+    "friendship": 10,
+    "love": 10,
+    "responses": [
+      {
+        "link": "date ending soon"
+      }
+    ]
+  },
+  {
     "id": "which sport",
     "name": "Willow",
     "dialog": "Ooh, which sport?",
@@ -291,6 +450,107 @@
     ]
   },
   {
+    "id": "which game",
+    "name": "Willow",
+    "dialog": "Ooh, what type of games do you like? Maybe we could play together!",
+    "emotion": "Happy",
+    "image": "WillowHappy",
+    "friendship": 5,
+    "love": 5,
+    "responses": [
+      {
+        "response": "Sounds good, I love shooters!",
+        "link": "they're okay"
+      },
+      {
+        "response": "Sounds good, \nI like multiplayer games!",
+        "link": "me too"
+      },
+      {
+        "response": "Sounds good, \nI like dating simulators!",
+        "link": "oh"
+      },
+      {
+        "response": "Maybe not",
+        "link": "rude"
+      }
+    ]
+  },
+  {
+    "id": "they're okay",
+    "name": "Willow",
+    "dialog": "Those are okay, it's settled then!",
+    "emotion": "Happy",
+    "image": "WillowHappy",
+    "friendship": 5,
+    "love": 5,
+    "responses": [
+      {
+        "link": "date ending soon"
+      }
+    ]
+  },
+  {
+    "id": "me too",
+    "name": "Willow",
+    "dialog": "Me too! That's perfect if we're gonna play together.",
+    "emotion": "Happy",
+    "image": "WillowHappy",
+    "friendship": 5,
+    "love": 5,
+    "responses": [
+      {
+        "link": "date ending soon"
+      }
+    ]
+  },
+  {
+    "id": "oh",
+    "name": "Willow",
+    "dialog": "Oh, uh.. that's nice? I'd rather go on a date with real people though.",
+    "emotion": "confused",
+    "image": "WillowConfused",
+    "love": -5,
+    "responses": [
+      {
+        "link": "date ending soon"
+      }
+    ]
+  },
+  {
+    "id": "rude",
+    "name": "Willow",
+    "dialog": "Rude much?",
+    "emotion": "Angry",
+    "image": "WillowAngry",
+    "friendship": -10,
+    "love": -10,
+    "responses": [
+      {
+        "response": "Sorry",
+        "link": "fine"
+      },
+      {
+        "response": "...",
+        "link": "date ends well"
+      }
+    ]
+  },
+  {
+    "id": "fine",
+    "name": "Willow",
+    "dialog": "It's fine",
+    "emotion": "Neutral",
+    "image": "WillowNeutral",
+    "friendship": 5,
+    "love": 5,
+    "responses": [
+      {
+        "link": "date ends well"
+      }
+    ]
+  },
+  {
     "id": "swimming",
     "name": "Willow",
     "dialog": "Oh, I love swimming! I don't do it as a sport, but it's a fun activity.",
@@ -300,7 +560,7 @@
     "love": 5,
     "responses": [
       {
-        "response": "We should go together some time!",
+        "response": "We should go together some time then!",
         "link": "sure"
       },
       {
@@ -323,47 +583,229 @@
         "link": "excuse me"
       },
       {
-        "response": "We should go together some time then!",
+        "response": "We should go together \nsome time then!",
         "link": "sure"
+      }
+    ]
+  },
+  {
+    "id": "sure",
+    "name": "Willow",
+    "dialog": "Sure! I'd love to.",
+    "emotion": "Happy",
+    "image": "WillowHappy",
+    "friendship": 10,
+    "love": 10,
+    "responses": [
+      {
+        "link": "date ending soon"
+      }
+    ]
+  },
+  {
+    "id": "rather",
+    "name": "Willow",
+    "dialog": "Not a bad idea, but I'd rather keep it like this. I'm fine with just hiking and swimming from time to time.",
+    "emotion": "Neutral",
+    "image": "WillowNeutral",
+    "responses": [
+      {
+        "link": "date ending soon"
+      }
+    ]
+  },
+  {
+    "id": "excuse me",
+    "name": "Willow",
+    "dialog": "Excuse me?",
+    "emotion": "Angry",
+    "image": "WillowAngry",
+    "friendship": -15,
+    "love": -15,
+    "responses": [
+      {
+        "response": "You're excused",
+        "link": "bad joke"
+      },
+      {
+        "response": "Don't worry, \nit's not too late to start",
+        "link": "bad joke"
+      },
+      {
+        "response": "I'm sorry, I shouldn't have said \nthat, I meant it as a joke.",
+        "link": "apologized"
+      }
+    ]
+  },
+  {
+    "id": "bad joke",
+    "name": "Willow",
+    "dialog": "It's not okay to joke about people's body like that.",
+    "emotion": "Angry",
+    "image": "WillowAngry",
+    "friendship": -10,
+    "love": -10,
+    "responses": [
+      {
+        "link": "date ends badly"
+      }
+    ]
+  },
+  {
+    "id": "apologized",
+    "name": "Willow",
+    "dialog": "I'm glad you see that now, just don't let it happen again.",
+    "emotion": "Neutral",
+    "image": "WillowNeutral",
+    "friendship": 5,
+    "love": 5,
+    "responses": [
+      {
+        "link": "date ending soon"
       }
     ]
   },
   {
     "id": "not great",
     "name": "Willow",
-    "dialog": "Im not the best at that, but it can be fun from time to time",
+    "dialog": "Im not the best at that, but it can be fun \nfrom time to time",
     "emotion": "Happy",
     "image": "WillowHappy",
     "friendship": 5,
     "love": 5,
     "responses": [
       {
-        "response": "That's okay, as long as you have fun",
-        "link": "sure"
+        "response": "That's okay, \nas long as you have fun",
+        "link": "true"
       },
       {
         "response": "Don't worry, I can teach you",
         "link": "nice"
       },
       {
-        "response": "Well, it's hard beating me after all. No one ever has.",
+        "response": "Well, it's hard beating me after all. \nNo one ever has.",
         "link": "doubt"
       }
     ]
   },
   {
-    "id": "date ends well",
+    "id": "true",
     "name": "Willow",
-    "dialog": "It's getting late, we should go soon,\nbut this was fun, I'm hoping to see you again.",
+    "dialog": "That's true",
+    "emotion": "Happy",
+    "image": "WillowHappy",
+    "friendship": 5,
+    "love": 5,
+    "responses": [
+      {
+        "link": "date ending soon"
+      }
+    ]
+  },
+  {
+    "id": "nice",
+    "name": "Willow",
+    "dialog": "That could be nice actually",
+    "emotion": "Happy",
+    "image": "WillowHappy",
+    "friendship": 5,
+    "love": 10,
+    "responses": [
+      {
+        "link": "date ending soon"
+      }
+    ]
+  },
+  {
+    "id": "doubt",
+    "name": "Willow",
+    "dialog": "Haha, I doubt that",
+    "emotion": "Happy",
+    "image": "WillowHappy",
+    "friendship": 10,
+    "love": 5,
+    "responses": [
+      {
+        "response": "...",
+        "link": "date ending soon"
+      },
+      {
+        "response": "I wasn't joking, \nI really am the best!",
+        "link": "Cocky"
+      }
+    ]
+  },
+  {
+    "id": "cocky",
+    "name": "Willow",
+    "dialog": "If you say so..",
+    "emotion": "Confused",
+    "image": "WillowConfused",
+    "friendship": -15,
+    "love": -10,
+    "responses": [
+      {
+        "link": "date ending soon"
+      }
+    ]
+  },
+  {
+    "id": "date ending soon",
+    "name": "Willow",
+    "dialog": "It's getting late, we should go soon..\nBut this was fun, I'm hoping to see you again.",
     "emotion": "Happy",
     "image": "WillowHappy",
     "responses": [
       {
-        "response": "I would also like to go on another date with you",
-        "link": "homepage?"
+        "response": "I also had a lot of fun \nand would like to go on \nanother date with you.",
+        "link": "2nd date soon"
       },
       {
-        "response": "I need to think about it first, goodbye for now.",
+        "response": "I would also like to hang out \nwith you again.",
+        "link": "hangout soon"
+      },
+      {
+        "response": "I need to think about it first, \ngoodbye for now.",
+        "link": "bye"
+      }
+    ]
+  },
+  {
+    "id": "2nd date soon",
+    "name": "Willow",
+    "dialog": "R-really? then I'll see you soon!",
+    "emotion": "Flustered",
+    "image": "WillowFlustered",
+    "friendship": 5,
+    "love": 10,
+    "responses": [
+      {
+        "link": "homepage?"
+      }
+    ]
+  },
+  {
+    "id": "hangout soon",
+    "name": "Willow",
+    "dialog": "That's great! then I'll see you soon!",
+    "emotion": "Happy",
+    "image": "WillowHappy",
+    "friendship": 10,
+    "love": 5,
+    "responses": [
+      {
+        "link": "homepage?"
+      }
+    ]
+  },
+  {
+    "id": "bye",
+    "name": "Willow",
+    "dialog": "That's okay. Goodbye then!",
+    "emotion": "Neutral",
+    "image": "WillowNeutral",
+    "responses": [
+      {
         "link": "homepage?"
       }
     ]
