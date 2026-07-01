@@ -19,7 +19,7 @@ export class EzraDatescene extends Scene {
 
         // Character needs to be an actor so the image of the character can be shown on the screen
         this.dateCharacter = new Actor({
-            pos: new Vector(640, 400)
+            pos: new Vector(650, 350)
         });
 
         this.add(this.dateCharacter);
@@ -101,7 +101,7 @@ export class EzraDatescene extends Scene {
         const sprite = Resources[imageName].toSprite();
 
         // you might need to change this again for each character
-        sprite.scale = new Vector(0.22, 0.22);
+        sprite.scale = new Vector(0.27, 0.27);
 
         this.dateCharacter.graphics.use(sprite);
     }
